@@ -1,6 +1,6 @@
 import mongoose from 'mongoose';
 
-const muscularSystemSchema = new mongoose.Schema({
+const MuscularSystemSchema = new mongoose.Schema({
   name: {
     type:String,
     required: true
@@ -15,5 +15,5 @@ const muscularSystemSchema = new mongoose.Schema({
   }
 })
 
-const Muscular_System = mongoose.model('Muscular_System', muscularSystemSchema);
+const Muscular_System = mongoose.model('Muscular_System', MuscularSystemSchema);
 export default Muscular_System;

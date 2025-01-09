@@ -1,11 +1,11 @@
 import mongoose from 'mongoose';
 
-const skeletalSystemSchema = new mongoose.Schema({
+const SkeletalSystemSchema = new mongoose.Schema({
   name: {
     type:String,
     required: true
   }
 })
 
-const Skeletal_System = mongoose.model('Skeletal_System', skeletalSystemSchema);
+const Skeletal_System = mongoose.model('Skeletal_System', SkeletalSystemSchema);
 export default Skeletal_System;
