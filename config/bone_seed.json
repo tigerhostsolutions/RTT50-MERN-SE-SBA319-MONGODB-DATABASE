@@ -1,18 +1,23 @@
 [
-  { "name": "Femur" },
-  { "name": "Tibia" },
-  { "name": "Fibula" },
-  { "name": "Humerus" },
-  { "name": "Radius" },
-  { "name": "Ulna" },
-  { "name": "Scapula" },
-  { "name": "Clavicle" },
-  { "name": "Sternum" },
-  { "name": "Pelvis" },
-  { "name": "Cranium" },
-  { "name": "Mandible" },
-  { "name": "Rib" },
-  { "name": "Vertebra" },
-  { "name": "Phalanges" }
+  {
+    "name": "Skull",
+    "purpose": "Protects the brain and forms the structure of the face"
+  },
+  {
+    "name": "Humerus",
+    "purpose": "Supports arm movement and connects to the shoulder"
+  },
+  {
+    "name": "Femur",
+    "purpose": "Longest and strongest bone; supports upright posture"
+  },
+  {
+    "name": "Rib Cage",
+    "purpose": "Protects lungs, heart, and other chest organs"
+  },
+  {
+    "name": "Vertebral Column",
+    "purpose": "Supports the body and protects the spinal cord"
+  }
 ]
 
