@@ -1,0 +1,18 @@
+[
+  { "name": "Femur" },
+  { "name": "Tibia" },
+  { "name": "Fibula" },
+  { "name": "Humerus" },
+  { "name": "Radius" },
+  { "name": "Ulna" },
+  { "name": "Scapula" },
+  { "name": "Clavicle" },
+  { "name": "Sternum" },
+  { "name": "Pelvis" },
+  { "name": "Cranium" },
+  { "name": "Mandible" },
+  { "name": "Rib" },
+  { "name": "Vertebra" },
+  { "name": "Phalanges" }
+]
+
