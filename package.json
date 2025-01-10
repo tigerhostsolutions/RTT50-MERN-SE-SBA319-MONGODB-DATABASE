@@ -1,11 +1,10 @@
 {
   "name": "rtt-mern-se-sba318-express-server",
   "version": "1.0.0",
-  "main": "index.js",
+  "main": "index.mjs",
   "scripts": {
-    "start": "nodemon index.js"
+    "start": "nodemon index.mjs"
   },
-  "type": "module",
   "keywords": [],
   "author": "",
   "license": "ISC",
