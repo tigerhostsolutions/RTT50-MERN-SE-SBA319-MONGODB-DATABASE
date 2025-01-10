@@ -3,20 +3,12 @@ import express from 'express';
 import mongoose from 'mongoose';
 
 import seed_routes from './routes/seed_routes.mjs';
-
-import {
-  skeletal_system_demo, muscular_system_demo, physiology_demo,
-} from './config/seed.mjs';
-import Muscular_System from './models/muscular_system.mjs';
-import Skeletal_System from './models/skeletal_system.mjs';
-import Physiology from './models/physiology.mjs';
-
 import {logger} from './config/winston_logger.mjs';
 import {conn} from './config/db.mjs';
 
 dotenv.config();
 const app = express(); // Creates an Express app
-const port = process.env.PORT3000; // Sets the port
+const port = process.env.PORT3000 || 5000; // Sets the port
 conn().
     then(() => logger.info('Successfully connected to the database')).
     catch((err) => {
@@ -47,8 +39,8 @@ const physiology_routes = await import('./routes/physiology_route.mjs').then(
     module => module.default);
 
 // Mount Routes - route definitions
-app.use('/api/ap/anatomy/muscular_system', muscular_routes);
-app.use('/api/ap/anatomy/skeletal_system', skeletal_routes);
+app.use('/api/ap/muscular_system', muscular_routes);
+app.use('/api/ap/skeletal_system', skeletal_routes);
 app.use('/api/ap/physiology', physiology_routes);
 
 // Seeding routes
@@ -60,8 +52,7 @@ app.get('/', (req, res) => {
 });
 
 // seed route -- populate db with start data
-app.get('/ap/anatomy/seed', async (req, res) => {
-
+app.get('/api/seed/all', async (req, res) => {
   try {
     // Parallel deletion using Promise.all
     await Promise.all([

@@ -1,0 +1,116 @@
+[2025-01-09T18:46:49.043Z] INFO: Server is running on port 5000
+[2025-01-09T18:53:40.528Z] INFO: Server is running on port 5000
+[2025-01-09T18:55:43.246Z] INFO: Server is running on port 5000
+[2025-01-09T18:55:49.251Z] INFO: connected to mongodb
+[2025-01-09T18:56:27.047Z] INFO: Successfully connected to the database
+[2025-01-09T18:56:27.092Z] INFO: Server is running on port 5000
+[2025-01-09T18:56:32.157Z] INFO: connected to mongodb
+[2025-01-09T19:01:55.737Z] INFO: Successfully connected to the database
+[2025-01-09T19:01:55.779Z] INFO: Server is running on port 5000
+[2025-01-09T19:02:00.816Z] INFO: connected to mongodb
+[2025-01-09T19:06:30.500Z] INFO: Successfully connected to the database
+[2025-01-09T19:06:30.549Z] INFO: Server is running on port 5000
+[2025-01-09T19:06:35.689Z] INFO: connected to mongodb
+[2025-01-09T19:18:00.922Z] INFO: Successfully connected to the database
+[2025-01-09T19:18:00.971Z] INFO: Server is running on port 5000
+[2025-01-09T19:18:06.152Z] INFO: connected to mongodb
+[2025-01-10T01:18:20.391Z] INFO: Server is running on port 5000
+[2025-01-10T01:24:58.816Z] INFO: Server is running on port 5000
+[2025-01-10T01:34:42.732Z] INFO: Server is running on port 5000
+[2025-01-10T01:35:23.617Z] INFO: Server is running on port 5000
+[2025-01-10T01:55:50.893Z] INFO: Server is running on port 3000
+[2025-01-10T02:17:36.606Z] INFO: Server is running on port 3000
+[2025-01-10T02:26:13.497Z] INFO: Server is running on port 3000
+[2025-01-10T03:51:23.279Z] INFO: Server is running on port 3000
+[2025-01-10T04:03:47.507Z] INFO: Server is running on port 3000
+[2025-01-10T04:16:59.788Z] INFO: Server is running on port 3000
+[2025-01-10T04:23:20.037Z] INFO: Server is running on port 3000
+[2025-01-10T06:52:09.267Z] INFO: Successfully connected to the database
+[2025-01-10T06:56:02.979Z] INFO: Successfully connected to the database
+[2025-01-10T06:57:16.550Z] INFO: Successfully connected to the database
+[2025-01-10T06:58:13.951Z] INFO: Successfully connected to the database
+[2025-01-10T06:58:14.007Z] INFO: Server is running on port 3000
+[2025-01-10T06:58:19.014Z] INFO: connected to mongodb
+[2025-01-10T07:06:23.051Z] INFO: Successfully connected to the database
+[2025-01-10T07:06:23.086Z] INFO: Server is running on port 3000
+[2025-01-10T07:06:32.278Z] INFO: connected to mongodb
+[2025-01-10T07:27:28.358Z] INFO: Successfully connected to the database
+[2025-01-10T07:33:56.086Z] INFO: Successfully connected to the database
+[2025-01-10T07:36:31.796Z] INFO: Successfully connected to the database
+[2025-01-10T07:41:02.068Z] INFO: Successfully connected to the database
+[2025-01-10T07:45:00.848Z] INFO: Successfully connected to the database
+[2025-01-10T07:45:00.900Z] INFO: Server is running on port 3000
+[2025-01-10T07:45:07.096Z] INFO: connected to mongodb
+[2025-01-10T08:09:11.807Z] INFO: Successfully connected to the database
+[2025-01-10T08:09:11.843Z] INFO: Server is running on port 3000
+[2025-01-10T08:09:18.312Z] INFO: connected to mongodb
+[2025-01-10T08:12:25.257Z] INFO: Successfully connected to the database
+[2025-01-10T08:12:25.296Z] INFO: Server is running on port 3000
+[2025-01-10T08:12:31.395Z] INFO: connected to mongodb
+[2025-01-10T08:14:35.961Z] INFO: Successfully connected to the database
+[2025-01-10T08:14:36.003Z] INFO: Server is running on port 3000
+[2025-01-10T08:14:41.983Z] INFO: connected to mongodb
+[2025-01-10T08:16:50.196Z] INFO: Successfully connected to the database
+[2025-01-10T08:16:50.240Z] INFO: Server is running on port 3000
+[2025-01-10T08:16:55.267Z] INFO: connected to mongodb
+[2025-01-10T08:19:47.202Z] WARN: Deleted all system data
+[2025-01-10T08:19:47.203Z] ERROR: Something went wrong loading seed data: muscular_system_demo is not defined
+[2025-01-10T08:26:38.050Z] INFO: Successfully connected to the database
+[2025-01-10T08:26:38.086Z] INFO: Server is running on port 3000
+[2025-01-10T08:26:43.042Z] INFO: connected to mongodb
+[2025-01-10T08:44:36.949Z] INFO: Successfully connected to the database
+[2025-01-10T08:44:36.977Z] INFO: Server is running on port 3000
+[2025-01-10T08:44:41.883Z] INFO: connected to mongodb
+[2025-01-10T08:50:16.957Z] WARN: Deleted all system data
+[2025-01-10T08:50:17.161Z] ERROR: Something went wrong loading seed data: Skeletal_System validation failed: purpose: Path `purpose` is required.
+[2025-01-10T08:50:25.446Z] INFO: Successfully connected to the database
+[2025-01-10T08:50:25.530Z] INFO: Server is running on port 3000
+[2025-01-10T08:50:31.478Z] INFO: connected to mongodb
+[2025-01-10T08:53:39.433Z] INFO: Successfully connected to the database
+[2025-01-10T08:53:39.485Z] INFO: Server is running on port 3000
+[2025-01-10T08:53:44.569Z] INFO: connected to mongodb
+[2025-01-10T08:58:15.232Z] WARN: Deleted all system data
+[2025-01-10T08:58:15.908Z] INFO: Imported all data successfully
+[2025-01-10T09:28:50.866Z] WARN: Deleted all system data
+[2025-01-10T09:28:51.350Z] INFO: Imported all data successfully
+[2025-01-10T09:29:01.478Z] WARN: Deleted all system data
+[2025-01-10T09:29:01.967Z] INFO: Imported all data successfully
+[2025-01-10T09:30:55.661Z] INFO: Successfully connected to the database
+[2025-01-10T09:30:55.714Z] INFO: Server is running on port 3000
+[2025-01-10T09:31:00.832Z] INFO: connected to mongodb
+[2025-01-10T09:36:52.358Z] WARN: Deleted all system data
+[2025-01-10T09:36:53.306Z] INFO: Imported all data successfully
+[2025-01-10T09:37:27.588Z] WARN: Deleted all system data
+[2025-01-10T09:37:28.194Z] INFO: Imported all data successfully
+[2025-01-10T09:37:38.298Z] WARN: Deleted all system data
+[2025-01-10T09:37:38.892Z] INFO: Imported all data successfully
+[2025-01-10T09:37:47.030Z] WARN: Deleted all system data
+[2025-01-10T09:37:47.642Z] INFO: Imported all data successfully
+[2025-01-10T11:11:54.037Z] ERROR: Unexpected non-whitespace character after JSON at position 84 (line 4 column 6)
+[2025-01-10T11:28:28.697Z] INFO: Successfully connected to the database
+[2025-01-10T11:28:28.723Z] INFO: Server is running on port 3000
+[2025-01-10T11:28:33.730Z] INFO: connected to mongodb
+[2025-01-10T11:35:14.267Z] INFO: Successfully connected to the database
+[2025-01-10T11:35:14.365Z] INFO: Server is running on port 3000
+[2025-01-10T11:35:20.184Z] INFO: connected to mongodb
+[2025-01-10T11:53:35.556Z] INFO: Server is running on port 3000
+[2025-01-10T11:53:40.424Z] INFO: Successfully connected to the database
+[2025-01-10T11:57:31.534Z] ERROR: Connection Error: Invalid scheme, expected connection string to start with "mongodb://" or "mongodb+srv://"
+[2025-01-10T11:57:31.543Z] INFO: Successfully connected to the database
+[2025-01-10T11:57:31.565Z] INFO: Server is running on port 3000
+[2025-01-10T11:58:05.123Z] INFO: Server is running on port 3000
+[2025-01-10T11:58:10.137Z] INFO: Successfully connected to the database
+[2025-01-10T12:18:48.275Z] INFO: Server is running on port 3000
+[2025-01-10T12:18:53.195Z] INFO: Successfully connected to the database
+[2025-01-10T12:23:10.020Z] INFO: Server is running on port 3000
+[2025-01-10T12:23:15.054Z] INFO: Successfully connected to the database
+[2025-01-10T13:07:44.221Z] INFO: Server is running on port 3000
+[2025-01-10T13:07:49.333Z] INFO: Successfully connected to the database
+[2025-01-10T13:10:33.031Z] WARN: Deleted all system data
+[2025-01-10T13:10:33.887Z] INFO: Imported all data successfully
+[2025-01-10T13:24:01.527Z] INFO: Server is running on port 3000
+[2025-01-10T13:24:06.492Z] INFO: Successfully connected to the database
+[2025-01-10T13:35:30.579Z] INFO: Server is running on port 3000
+[2025-01-10T13:35:35.581Z] INFO: Successfully connected to the database
+[2025-01-10T13:38:57.173Z] INFO: Server is running on port 3000
+[2025-01-10T13:39:02.192Z] INFO: Successfully connected to the database

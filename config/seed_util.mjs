@@ -32,7 +32,7 @@ async function seedMuscularSystem() {
       console.log('Data for Muscular System already seeded.');
       return;
     }
-    const data = await readJsonFile('../data/muscular_system.json');
+    const data = await readJsonFile('../data/muscle_seed.json');
     await Muscular_System.insertMany(data);
     console.log('Muscular System seeding completed.');
   } catch (error) {
@@ -48,7 +48,7 @@ async function seedSkeletalSystem() {
       console.log('Data for Skeletal System already seeded.');
       return;
     }
-    const data = await readJsonFile('../data/skeletal_system.json');
+    const data = await readJsonFile('../data/bone_seed.json');
     await Skeletal_System.insertMany(data);
     console.log('Skeletal System seeding completed.');
   } catch (error) {
@@ -64,7 +64,7 @@ async function seedPhysiology() {
       console.log('Data for Physiology already seeded.');
       return;
     }
-    const data = await readJsonFile('../data/physiology.json');
+    const data = await readJsonFile('../data/physiology_seed.json');
     await Physiology.insertMany(data);
     console.log('Physiology seeding completed.');
   } catch (error) {
