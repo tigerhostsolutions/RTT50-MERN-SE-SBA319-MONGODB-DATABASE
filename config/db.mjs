@@ -4,7 +4,7 @@ import {logger} from './winston_logger.mjs';
 export const conn = async () => {
   try {
     //connect to db
-    mongoose.connect(process.env.MONGO_URI);
+    await mongoose.connect(process.env.MONGO_URI);
     mongoose.connection.once('open', () => {
     logger.info('connected to mongodb');
     });
