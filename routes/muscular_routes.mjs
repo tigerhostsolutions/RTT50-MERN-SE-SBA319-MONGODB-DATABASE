@@ -1,6 +1,6 @@
 import express from 'express';
 const router = express.Router();
-import Muscular_System from 'models/muscular_system.mjs';
+import Muscular_System from '../models/muscular_system.mjs';
 
 //delete all muscles
 router.delete('/', async (req,res)=>{

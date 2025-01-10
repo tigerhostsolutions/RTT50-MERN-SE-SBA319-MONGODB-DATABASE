@@ -1,15 +1,15 @@
 import mongoose from 'mongoose';
+import {logger} from './winston_logger.mjs';
 
 export const conn = async () => {
-
   try {
     //connect to db
     mongoose.connect(process.env.MONGO_URI);
     mongoose.connection.once('open', () => {
-      console.log('connected to mongodb');
+    logger.info('connected to mongodb');
     });
   }
   catch (e) {
-    console.log(`Connection Error: ${e.message}`);
+    logger.error(`Connection Error: ${e.message}`);
   }
 };

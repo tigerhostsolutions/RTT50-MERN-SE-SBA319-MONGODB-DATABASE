@@ -1,6 +1,6 @@
 import express from 'express';
 const router = express.Router();
-import Physiology from 'models/physiology.mjs';
+import Physiology from '../models/physiology.mjs';
 
 //delete all muscles
 router.delete('/', async (req,res)=>{
