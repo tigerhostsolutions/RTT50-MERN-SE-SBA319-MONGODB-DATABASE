@@ -1,11 +1,11 @@
 import express from 'express';
 const router = express.Router();
-import Human_Body_System from '../models/human_body_system.js';
+import Physiology from '../models/physiology.js';
 
 //delete all muscles
 router.delete('/', async (req,res)=>{
   try{
-    const delete_all = await Human_Body_System.deleteMany({})
+    const delete_all = await Physiology.deleteMany({})
     res.json(delete_all)
   }catch (e) {
     res.status(500).json({error: e.message})
@@ -15,7 +15,7 @@ router.delete('/', async (req,res)=>{
 //get all muscles
 router.get('/', async (req, res) => {
   try {
-    const get_all = await Human_Body_System.find({});
+    const get_all = await Physiology.find({});
     res.json(get_all);
   }
   catch (e) {
@@ -26,7 +26,7 @@ router.get('/', async (req, res) => {
 //show route - get 1 muscle
 router.get('/:id', async (req, res) => {
   try {
-    const get_one = await Human_Body_System.findById(req.params.id);
+    const get_one = await Physiology.findById(req.params.id);
     res.json(get_one);
   }
   catch (e) {
@@ -37,7 +37,7 @@ router.get('/:id', async (req, res) => {
 //create new muscle
 router.post('/', async (req, res) => {
   try {
-    const create = await Human_Body_System.create(req.body);
+    const create = await Physiology.create(req.body);
     console.log(req.body);
     res.json(create);
   }
@@ -49,7 +49,7 @@ router.post('/', async (req, res) => {
 //update muscle
 router.put('/:id', async (req,res)=>{
   try {
-    const update= await Human_Body_System.findByIdAndUpdate(req.params.id, req.body)
+    const update= await Physiology.findByIdAndUpdate(req.params.id, req.body)
     res.json(update)
   }catch (e) {
     res.status(500).json({error: e.message})
@@ -59,7 +59,7 @@ router.put('/:id', async (req,res)=>{
 //delete 1 muscle
 router.delete('/:id', async (req,res)=>{
   try{
-    const delete_one = await Human_Body_System.findByIdAndDelete(req.params.id)
+    const delete_one = await Physiology.findByIdAndDelete(req.params.id)
     res.json(delete_one)
   }catch (e) {
     res.status(500).json({error: e.message})
