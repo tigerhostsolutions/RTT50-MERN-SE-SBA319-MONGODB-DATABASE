@@ -1,13 +1,13 @@
 import dotenv from 'dotenv';
 import express from 'express';
 import mongoose from 'mongoose';
-
-import seed_routes from './routes/seed_routes.mjs';
-import {logger} from './config/winston_logger.mjs';
 import {conn} from './config/db.mjs';
+import errorHandler from './middlewares/errorHandler.js';
+import {logger} from './middlewares/winston_logger.mjs';
 import Muscular_System from './models/muscular_system.mjs';
 import Skeletal_System from './models/skeletal_system.mjs';
 import Physiology from './models/physiology.mjs';
+import seed_routes from './routes/seed_routes.mjs';
 
 dotenv.config();
 const app = express(); // Creates an Express app
@@ -18,21 +18,8 @@ conn().
       logger.error('Failed to connect to the database:', err.message);
       process.exit(1);
     });
-
 // Middleware
 app.use(express.json());
-
-// Error-Handling Middleware
-app.use((err, req, res, next) => {
-  logger.error({
-    message: err.message, stack: err.stack, // error stack trace - debugging
-    url: req.originalUrl, // Log the URL where the error occurred
-    method: req.method, // Log the HTTP method
-    statusCode: res.statusCode || 500, // Log the response status code
-  });
-  res.status(500).send('Server Error');
-});
-
 // Resolve the dynamic imports before using them
 const muscular_routes = await import('./routes/muscular_routes.mjs').then(
     module => module.default);
@@ -40,16 +27,12 @@ const skeletal_routes = await import('./routes/skeletal_routes.mjs').then(
     module => module.default);
 const physiology_routes = await import('./routes/physiology_route.mjs').then(
     module => module.default);
-
-// Mount Routes - route definitions
+// Route definitions
 app.use('/api/ap/muscular_system', muscular_routes);
 app.use('/api/ap/skeletal_system', skeletal_routes);
 app.use('/api/ap/physiology', physiology_routes);
-
-// Seeding routes
-app.use('/api', seed_routes);
-
-//home route
+app.use('/api', seed_routes); // Seeding routes
+// Home Route
 app.get('/', (req, res) => {
   res.send('<h1>Welcome to Human Anatomy & Physiology API</h1>' +
       '<a href="http://localhost:3000/api/ap/muscular_system" target="_blank">Muscle' +
@@ -60,7 +43,6 @@ app.get('/', (req, res) => {
       ' target="_blank">Physiology List</a>');
 });
 
-// seed route -- populate db with start data
 app.get('/api/seed/all', async (req, res) => {
   try {
     // Parallel deletion using Promise.all
@@ -76,7 +58,6 @@ app.get('/api/seed/all', async (req, res) => {
   }
 
   try {
-    // Parallel insertion using Promise.all
     const [muscular_system_data, skeletal_system_data, physiology_data] = await Promise.all(
         [
           Muscular_System.create(muscular_system_demo),
@@ -84,7 +65,6 @@ app.get('/api/seed/all', async (req, res) => {
           Physiology.create(physiology_demo),
         ]);
     logger.info('Imported all data successfully');
-
     // Send response back to client
     return res.json({
       Muscular_System: muscular_system_data,
@@ -93,7 +73,6 @@ app.get('/api/seed/all', async (req, res) => {
     });
   }
   catch (e) {
-    // Handle errors properly
     logger.error(`Something went wrong loading seed data: ${e.message}`);
     return res.status(500).
                json({
@@ -103,6 +82,7 @@ app.get('/api/seed/all', async (req, res) => {
   }
 });
 
+app.use(errorHandler);
 // Starts the server
 app.listen(port, () => {
   logger.info(`Server is running on port ${port}`);

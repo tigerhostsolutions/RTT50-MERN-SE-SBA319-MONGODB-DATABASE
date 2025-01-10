@@ -1,5 +1,5 @@
 import mongoose from 'mongoose';
-import {logger} from './winston_logger.mjs';
+import {logger} from '../middlewares/winston_logger.mjs';
 
 export const conn = async () => {
   try {
