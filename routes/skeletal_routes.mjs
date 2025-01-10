@@ -1,21 +1,21 @@
 import express from 'express';
 const router = express.Router();
-import Physiology from '../models/physiology.js';
+import Skeletal_System from 'models/skeletal_system.mjs';
 
-//delete all muscles
+//delete all bones
 router.delete('/', async (req,res)=>{
   try{
-    const delete_all = await Physiology.deleteMany({})
+    const delete_all = await Skeletal_System.deleteMany({})
     res.json(delete_all)
   }catch (e) {
     res.status(500).json({error: e.message})
   }
 })
 
-//get all muscles
+//get all bones
 router.get('/', async (req, res) => {
   try {
-    const get_all = await Physiology.find({});
+    const get_all = await Skeletal_System.find({});
     res.json(get_all);
   }
   catch (e) {
@@ -23,10 +23,10 @@ router.get('/', async (req, res) => {
   }
 });
 
-//show route - get 1 muscle
+//show route - get 1 bone
 router.get('/:id', async (req, res) => {
   try {
-    const get_one = await Physiology.findById(req.params.id);
+    const get_one = await Skeletal_System.findById(req.params.id);
     res.json(get_one);
   }
   catch (e) {
@@ -34,10 +34,10 @@ router.get('/:id', async (req, res) => {
   }
 });
 
-//create new muscle
+//create new bone
 router.post('/', async (req, res) => {
   try {
-    const create = await Physiology.create(req.body);
+    const create = await Skeletal_System.create(req.body);
     console.log(req.body);
     res.json(create);
   }
@@ -46,20 +46,20 @@ router.post('/', async (req, res) => {
   }
 });
 
-//update muscle
+//update bone
 router.put('/:id', async (req,res)=>{
   try {
-    const update= await Physiology.findByIdAndUpdate(req.params.id, req.body)
+    const update= await Skeletal_System.findByIdAndUpdate(req.params.id, req.body)
     res.json(update)
   }catch (e) {
     res.status(500).json({error: e.message})
   }
 })
 
-//delete 1 muscle
+//delete 1 bone
 router.delete('/:id', async (req,res)=>{
   try{
-    const delete_one = await Physiology.findByIdAndDelete(req.params.id)
+    const delete_one = await Skeletal_System.findByIdAndDelete(req.params.id)
     res.json(delete_one)
   }catch (e) {
     res.status(500).json({error: e.message})
