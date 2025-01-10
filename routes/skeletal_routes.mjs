@@ -2,7 +2,7 @@ import express from 'express';
 const router = express.Router();
 import Skeletal_System from '../models/skeletal_system.mjs';
 
-//delete all bones
+//Delete All
 router.delete('/', async (req,res)=>{
   try{
     const delete_all = await Skeletal_System.deleteMany({})
@@ -11,8 +11,7 @@ router.delete('/', async (req,res)=>{
     res.status(500).json({error: e.message})
   }
 })
-
-//get all bones
+//Retrieve All
 router.get('/', async (req, res) => {
   try {
     const get_all = await Skeletal_System.find({});
@@ -22,8 +21,7 @@ router.get('/', async (req, res) => {
     res.status(500).json({errors: e.message});
   }
 });
-
-//show route - get 1 bone
+//Retrieve by id
 router.get('/:id', async (req, res) => {
   try {
     const get_one = await Skeletal_System.findById(req.params.id);
@@ -33,8 +31,7 @@ router.get('/:id', async (req, res) => {
     res.status(500).json({error: e.message});
   }
 });
-
-//create new bone
+//Add
 router.post('/', async (req, res) => {
   try {
     const create = await Skeletal_System.create(req.body);
@@ -45,8 +42,7 @@ router.post('/', async (req, res) => {
     res.status(500).json({error: e.message});
   }
 });
-
-//update bone
+//Update by id
 router.put('/:id', async (req,res)=>{
   try {
     const update= await Skeletal_System.findByIdAndUpdate(req.params.id, req.body)
@@ -55,8 +51,7 @@ router.put('/:id', async (req,res)=>{
     res.status(500).json({error: e.message})
   }
 })
-
-//delete 1 bone
+//Delete by id
 router.delete('/:id', async (req,res)=>{
   try{
     const delete_one = await Skeletal_System.findByIdAndDelete(req.params.id)

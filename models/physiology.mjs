@@ -4,6 +4,10 @@ const PhysiologySchema = new mongoose.Schema({
   name: {
     type:String,
     required: true
+  },
+  purpose: {
+    type:String,
+    required: true
   }
 })
 

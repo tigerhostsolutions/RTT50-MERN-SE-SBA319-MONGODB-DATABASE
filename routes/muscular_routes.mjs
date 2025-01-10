@@ -2,7 +2,7 @@ import express from 'express';
 const router = express.Router();
 import Muscular_System from '../models/muscular_system.mjs';
 
-//delete all muscles
+// Delete All
 router.delete('/', async (req,res)=>{
   try{
     const delete_all = await Muscular_System.deleteMany({})
@@ -11,8 +11,7 @@ router.delete('/', async (req,res)=>{
     res.status(500).json({error: e.message})
   }
 })
-
-//get all muscles
+// Retrieve All
 router.get('/', async (req, res) => {
   try {
     const get_all = await Muscular_System.find({});
@@ -22,8 +21,7 @@ router.get('/', async (req, res) => {
     res.status(500).json({errors: e.message});
   }
 });
-
-//show route - get 1 muscle
+// Retrieve by id
 router.get('/:id', async (req, res) => {
   try {
     const get_one = await Muscular_System.findById(req.params.id);
@@ -45,8 +43,7 @@ router.post('/', async (req, res) => {
     res.status(500).json({error: e.message});
   }
 });
-
-//update muscle
+//Add
 router.put('/:id', async (req,res)=>{
   try {
     const update= await Muscular_System.findByIdAndUpdate(req.params.id, req.body)
@@ -55,8 +52,7 @@ router.put('/:id', async (req,res)=>{
     res.status(500).json({error: e.message})
   }
 })
-
-//delete 1 muscle
+//Delete by id
 router.delete('/:id', async (req,res)=>{
   try{
     const delete_one = await Muscular_System.findByIdAndDelete(req.params.id)
