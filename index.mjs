@@ -5,6 +5,9 @@ import mongoose from 'mongoose';
 import seed_routes from './routes/seed_routes.mjs';
 import {logger} from './config/winston_logger.mjs';
 import {conn} from './config/db.mjs';
+import Muscular_System from './models/muscular_system.mjs';
+import Skeletal_System from './models/skeletal_system.mjs';
+import Physiology from './models/physiology.mjs';
 
 dotenv.config();
 const app = express(); // Creates an Express app
@@ -48,7 +51,13 @@ app.use('/api', seed_routes);
 
 //home route
 app.get('/', (req, res) => {
-  res.send('Welcome to Human Anatomy & Physiology API');
+  res.send('<h1>Welcome to Human Anatomy & Physiology API</h1>' +
+      '<a href="http://localhost:3000/api/ap/muscular_system" target="_blank">Muscle' +
+      ' List</a>'+ '<br/>'+
+      '<a href="http://localhost:3000/api/ap/skeletal_system" target="_blank">Bone' +
+      ' List</a>'+ '<br/>'+
+      '<a href="http://localhost:3000/api/ap/physiology"' +
+      ' target="_blank">Physiology List</a>');
 });
 
 // seed route -- populate db with start data
