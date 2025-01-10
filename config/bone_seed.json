@@ -1,23 +1,18 @@
 [
   {
-    "name": "Skull",
-    "purpose": "Protects the brain and forms the structure of the face"
+    "name": "Skull"
   },
   {
-    "name": "Humerus",
-    "purpose": "Supports arm movement and connects to the shoulder"
+    "name": "Humerus"
   },
   {
-    "name": "Femur",
-    "purpose": "Longest and strongest bone; supports upright posture"
+    "name": "Femur"
   },
   {
-    "name": "Rib Cage",
-    "purpose": "Protects lungs, heart, and other chest organs"
+    "name": "Rib Cage"
   },
   {
-    "name": "Vertebral Column",
-    "purpose": "Supports the body and protects the spinal cord"
+    "name": "Vertebral Column"
   }
 ]
 
