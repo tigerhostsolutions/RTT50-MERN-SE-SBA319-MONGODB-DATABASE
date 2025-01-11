@@ -1,6 +1,6 @@
 import express from 'express';
 import {seedMuscularSystem} from '../config/seed_util.mjs';
-import {logger} from 'middlewares/winston_logger.mjs';
+// import {logger} from 'middlewares/winston_logger.mjs';
 const router = express.Router();
 
 /*testng this approach to read seed data*/
