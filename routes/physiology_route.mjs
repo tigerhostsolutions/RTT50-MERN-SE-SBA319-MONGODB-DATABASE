@@ -1,7 +1,7 @@
 import express from 'express';
 const router = express.Router();
 import Physiology from '../models/physiology.mjs';
-import {logger} from 'middlewares/winston_logger.mjs';
+import {logger} from '../middlewares/winston_logger.mjs';
 
 // Delete All
 router.delete('/', async (req,res)=>{

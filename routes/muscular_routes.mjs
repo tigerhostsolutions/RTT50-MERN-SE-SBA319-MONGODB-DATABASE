@@ -1,7 +1,7 @@
 import express from 'express';
 import Muscular_System from '../models/muscular_system.mjs';
 import {logger} from '../middlewares/winston_logger.mjs';
-import {validate_route_param_id} from 'middlewares/validate_request.mjs';
+import {validate_route_param_id} from '../middlewares/validate_request.mjs';
 
 const router = express.Router();
 
