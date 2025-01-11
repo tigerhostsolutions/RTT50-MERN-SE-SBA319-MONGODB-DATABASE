@@ -1,15 +1,17 @@
 import mongoose from 'mongoose';
 import {logger} from '../middlewares/winston_logger.mjs';
 
-export const conn = async () => {
+ const conn = async () => {
   try {
-    //connect to db
-    await mongoose.connect(process.env.MONGO_URI);
+    const db = await mongoose.connect(process.env.MONGO_URI);
     mongoose.connection.once('open', () => {
-    logger.info('connected to mongodb');
+    logger.info(`MongoDb Connection ${db.connection.host} Successful.`);
     });
   }
   catch (e) {
-    logger.error(`Connection Error: ${e.message}`);
+    logger.error(`MongoDb Connection Error: ${e.message}`);
+    process.exit(1);
   }
 };
+
+export default conn;

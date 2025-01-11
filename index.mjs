@@ -1,8 +1,9 @@
 import dotenv from 'dotenv';
 import express from 'express';
 import mongoose from 'mongoose';
-import {conn} from './config/db.mjs';
-import errorHandler from './middlewares/errorHandler.js';
+import conn from './config/db.mjs';
+import checkDbConn from './middlewares/db_conn_check.mjs';
+import error_handler from './middlewares/error_handler.mjs';
 import {logger} from './middlewares/winston_logger.mjs';
 import Muscular_System from './models/muscular_system.mjs';
 import Skeletal_System from './models/skeletal_system.mjs';
@@ -10,16 +11,18 @@ import Physiology from './models/physiology.mjs';
 import seed_routes from './routes/seed_routes.mjs';
 
 dotenv.config();
-const app = express(); // Creates an Express app
-const port = process.env.PORT3000 || 5000; // Sets the port
+const app = express();
+const port = process.env.PORT3000 || 3000;
 conn().
     then(() => logger.info('Successfully connected to the database')).
     catch((err) => {
       logger.error('Failed to connect to the database:', err.message);
       process.exit(1);
     });
+
 // Middleware
 app.use(express.json());
+
 // Resolve the dynamic imports before using them
 const muscular_routes = await import('./routes/muscular_routes.mjs').then(
     module => module.default);
@@ -27,11 +30,14 @@ const skeletal_routes = await import('./routes/skeletal_routes.mjs').then(
     module => module.default);
 const physiology_routes = await import('./routes/physiology_route.mjs').then(
     module => module.default);
+
+app.use(checkDbConn);
+
 // Route definitions
 app.use('/api/ap/muscular_system', muscular_routes);
 app.use('/api/ap/skeletal_system', skeletal_routes);
 app.use('/api/ap/physiology', physiology_routes);
-app.use('/api', seed_routes); // Seeding routes
+
 // Home Route
 app.get('/', (req, res) => {
   res.send('<h1>Welcome to Human Anatomy & Physiology API</h1>' +
@@ -43,18 +49,18 @@ app.get('/', (req, res) => {
       ' target="_blank">Physiology List</a>');
 });
 
+app.use('/api', seed_routes);
 app.get('/api/seed/all', async (req, res) => {
   try {
-    // Parallel deletion using Promise.all
     await Promise.all([
       Muscular_System.deleteMany({}),
       Skeletal_System.deleteMany({}),
       Physiology.deleteMany({}),
     ]);
-    logger.warn('Deleted all system data');
+    logger.warn('Deleted all data');
   }
   catch (e) {
-    logger.error(`Error deleting system data: ${e.message}`);
+    logger.error(`Error deleting data: ${e.message}`);
   }
 
   try {
@@ -64,7 +70,7 @@ app.get('/api/seed/all', async (req, res) => {
           Skeletal_System.create(skeletal_system_demo),
           Physiology.create(physiology_demo),
         ]);
-    logger.info('Imported all data successfully');
+    logger.info('Imported all seed data successfully');
     // Send response back to client
     return res.json({
       Muscular_System: muscular_system_data,
@@ -82,7 +88,7 @@ app.get('/api/seed/all', async (req, res) => {
   }
 });
 
-app.use(errorHandler);
+app.use(error_handler);
 // Starts the server
 app.listen(port, () => {
   logger.info(`Server is running on port ${port}`);

@@ -23,15 +23,14 @@ async function readJsonFile(filePath) {
   }
 }
 
-// Seed data for Model 1
 async function seedMuscularSystem() {
   try {
-    const exists = await Muscular_System.findOne(); // Check if data already
-    // exists
+    const exists = await Muscular_System.findOne();//Check if data already exists
     if (exists) {
       console.log('Data for Muscular System already seeded.');
       return;
     }
+    //read seed data from file
     const data = await readJsonFile('../data/muscle_seed.json');
     await Muscular_System.insertMany(data);
     console.log('Muscular System seeding completed.');
@@ -40,10 +39,9 @@ async function seedMuscularSystem() {
   }
 }
 
-// Seed data for Model 2
 async function seedSkeletalSystem() {
   try {
-    const exists = await Skeletal_System.findOne(); // Check if data already exists
+    const exists = await Skeletal_System.findOne();
     if (exists) {
       console.log('Data for Skeletal System already seeded.');
       return;
@@ -56,10 +54,9 @@ async function seedSkeletalSystem() {
   }
 }
 
-// Seed data for Physiology
 async function seedPhysiology() {
   try {
-    const exists = await Physiology.findOne(); // Check if data already exists
+    const exists = await Physiology.findOne();
     if (exists) {
       console.log('Data for Physiology already seeded.');
       return;

@@ -2,7 +2,6 @@ import express from 'express';
 const router = express.Router();
 import {seedMuscularSystem, seedSkeletalSystem, seedPhysiology} from '../config/seed_util.mjs';
 
-// Route to seed Model 1
 router.get('/seed/muscular_system', async (req, res) => {
   try {
     await seedMuscularSystem();
@@ -12,7 +11,6 @@ router.get('/seed/muscular_system', async (req, res) => {
   }
 });
 
-// Route to seed Model 2
 router.get('/seed/skeletal_system', async (req, res) => {
   try {
     await seedSkeletalSystem();
@@ -22,7 +20,6 @@ router.get('/seed/skeletal_system', async (req, res) => {
   }
 });
 
-// Route to seed Model 3
 router.get('/seed/physiology', async (req, res) => {
   try {
     await seedPhysiology();
@@ -32,7 +29,6 @@ router.get('/seed/physiology', async (req, res) => {
   }
 });
 
-// Route to seed all models asynchronously
 router.get('/seed/all', async (req, res) => {
   try {
     const promises = [seedMuscularSystem(), seedSkeletalSystem(), seedPhysiology()];
