@@ -15,17 +15,16 @@ router.delete('/', async (req,res)=>{
     res.status(500).json({error: e.message})
   }
 })
-
 // Retrieve All or Filter by Query Parameters
 router.get('/', async (req, res) => {
   try {
-    const { name, action, insertion } = req.query; // Extract the query parameters
+    const { name, action, insertion } = req.query;
     const filters = {};
 
     // Apply filters dynamically based on provided query parameters
-    if (name) filters.name = { $regex: name, $options: 'i' }; // Case-insensitive match for name
-    if (action) filters.action = { $regex: action, $options: 'i' }; // Case-insensitive match for action
-    if (insertion) filters.insertion = { $regex: insertion, $options: 'i' }; // Case-insensitive match for insertion
+    if (name) filters.name = { $regex: name, $options: 'i' };
+    if (action) filters.action = { $regex: action, $options: 'i' };
+    if (insertion) filters.insertion = { $regex: insertion, $options: 'i' };
 
     // Perform the filtered search
     const results = await Muscular_System.find(filters);
@@ -34,7 +33,18 @@ router.get('/', async (req, res) => {
     res.status(500).json({ errors: e.message });
   }
 });
-
+// Retrieve by Name - route param implementation
+router.get('/filter/:param', async (req, res) => {
+  try {
+    const filter_key = req.params.param.toLowerCase();
+    const filtered_data = await Muscular_System.find({
+      name: { $regex: new RegExp(filter_key, "i") },
+    });
+    res.json(filtered_data);
+  } catch (e) {
+    res.status(500).json({ error: e.message });
+  }
+});
 // Retrieve by id
 router.get('/:id', async (req, res) => {
   try {
@@ -45,7 +55,6 @@ router.get('/:id', async (req, res) => {
     res.status(500).json({error: e.message});
   }
 });
-
 //Add new muscle
 router.post('/', async (req, res) => {
   try {

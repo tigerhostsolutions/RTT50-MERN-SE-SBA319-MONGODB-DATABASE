@@ -1,19 +1,7 @@
 import express from 'express';
-const router = express.Router();
 import Skeletal_System from '../models/skeletal_system.mjs';
 
-// Retrieve by a Specific Name or Other Field
-router.get('/filter/:param', async (req, res) => {
-  try {
-    const filter_key = req.params.param.toLowerCase();
-    const filtered_data = await Skeletal_System.find({
-      name: { $regex: new RegExp(filter_key, "i") }, // Case-insensitive match
-    });
-    res.json(filtered_data);
-  } catch (e) {
-    res.status(500).json({ error: e.message });
-  }
-});
+const router = express.Router();
 
 // Delete All
 router.delete('/', async (req, res) => {
@@ -24,7 +12,36 @@ router.delete('/', async (req, res) => {
     res.status(500).json({ error: e.message });
   }
 });
+// Retrieve All or Filter by Query Parameters
+router.get('/', async (req, res) => {
+  try {
+    const { name, action, insertion } = req.query;
+    const filters = {};
 
+    // Apply filters dynamically based on provided query parameters
+    if (name) filters.name = { $regex: name, $options: 'i' };
+    if (action) filters.action = { $regex: action, $options: 'i' };
+    if (insertion) filters.insertion = { $regex: insertion, $options: 'i' };
+
+    // Perform the filtered search
+    const results = await Skeletal_System.find(filters);
+    res.json(results);
+  } catch (e) {
+    res.status(500).json({ errors: e.message });
+  }
+});
+// Retrieve by Name - Route Parameters
+router.get('/filter/:param', async (req, res) => {
+  try {
+    const filter_key = req.params.param.toLowerCase();
+    const filtered_data = await Skeletal_System.find({
+      name: { $regex: new RegExp(filter_key, "i") },
+    });
+    res.json(filtered_data);
+  } catch (e) {
+    res.status(500).json({ error: e.message });
+  }
+});
 // Retrieve All
 router.get('/', async (req, res) => {
   try {
@@ -34,7 +51,6 @@ router.get('/', async (req, res) => {
     res.status(500).json({ errors: e.message });
   }
 });
-
 // Retrieve by id
 router.get('/:id', async (req, res) => {
   try {
@@ -44,8 +60,7 @@ router.get('/:id', async (req, res) => {
     res.status(500).json({ error: e.message });
   }
 });
-
-// Add
+// Add new
 router.post('/', async (req, res) => {
   try {
     const create = await Skeletal_System.create(req.body);
@@ -55,7 +70,6 @@ router.post('/', async (req, res) => {
     res.status(500).json({ error: e.message });
   }
 });
-
 // Update by id
 router.put('/:id', async (req, res) => {
   try {
@@ -65,7 +79,6 @@ router.put('/:id', async (req, res) => {
     res.status(500).json({ error: e.message });
   }
 });
-
 // Delete by id
 router.delete('/:id', async (req, res) => {
   try {

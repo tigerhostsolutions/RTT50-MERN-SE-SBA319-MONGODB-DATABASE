@@ -11,6 +11,39 @@ router.delete('/', async (req,res)=>{
     res.status(500).json({error: e.message})
   }
 })
+
+// Retrieve All or Filter by Query Parameters
+router.get('/', async (req, res) => {
+  try {
+    const { name, action, insertion } = req.query;
+    const filters = {};
+
+    // Apply filters dynamically based on provided query parameters
+    if (name) filters.name = { $regex: name, $options: 'i' };
+    if (action) filters.action = { $regex: action, $options: 'i' };
+    if (insertion) filters.insertion = { $regex: insertion, $options: 'i' };
+
+    // Perform the filtered search
+    const results = await Physiology.find(filters);
+    res.json(results);
+  } catch (e) {
+    res.status(500).json({ errors: e.message });
+  }
+});
+
+// Retrieve by Name - Route Parameters
+router.get('/filter/:param', async (req, res) => {
+  try {
+    const filter_key = req.params.param.toLowerCase();
+    const filtered_data = await Physiology.find({
+      name: { $regex: new RegExp(filter_key, "i") },
+    });
+    res.json(filtered_data);
+  } catch (e) {
+    res.status(500).json({ error: e.message });
+  }
+});
+
 // Retrieve All
 router.get('/', async (req, res) => {
   try {
