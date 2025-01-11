@@ -1,11 +1,14 @@
 import express from 'express';
 const router = express.Router();
 import Physiology from '../models/physiology.mjs';
+import {logger} from 'middlewares/winston_logger.mjs';
 
 // Delete All
 router.delete('/', async (req,res)=>{
   try{
     const delete_all = await Physiology.deleteMany({})
+    logger.warn('Delete attempted!');
+    console.warn('Delete attempted!');
     res.json(delete_all)
   }catch (e) {
     res.status(500).json({error: e.message})

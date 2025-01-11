@@ -1,5 +1,7 @@
 import express from 'express';
 import Skeletal_System from '../models/skeletal_system.mjs';
+import {validate_route_param_id} from '../middlewares/validate_request.mjs';
+import {logger} from '../middlewares/winston_logger.mjs';
 
 const router = express.Router();
 
@@ -7,6 +9,8 @@ const router = express.Router();
 router.delete('/', async (req, res) => {
   try {
     const delete_all = await Skeletal_System.deleteMany({});
+    logger.warn('Delete attempted!');
+    console.warn('Delete attempted!');
     res.json(delete_all);
   } catch (e) {
     res.status(500).json({ error: e.message });
@@ -52,7 +56,7 @@ router.get('/', async (req, res) => {
   }
 });
 // Retrieve by id
-router.get('/:id', async (req, res) => {
+router.get('/:id', validate_route_param_id, async (req, res) => {
   try {
     const get_one = await Skeletal_System.findById(req.params.id);
     res.json(get_one);
@@ -71,7 +75,7 @@ router.post('/', async (req, res) => {
   }
 });
 // Update by id
-router.put('/:id', async (req, res) => {
+router.put('/:id', validate_route_param_id, async (req, res) => {
   try {
     const update = await Skeletal_System.findByIdAndUpdate(req.params.id, req.body);
     res.json(update);
@@ -80,9 +84,11 @@ router.put('/:id', async (req, res) => {
   }
 });
 // Delete by id
-router.delete('/:id', async (req, res) => {
+router.delete('/:id', validate_route_param_id,async (req, res) => {
   try {
     const delete_one = await Skeletal_System.findByIdAndDelete(req.params.id);
+    logger.warn('Delete attempted!');
+    console.warn('Delete attempted!');
     res.json(delete_one);
   } catch (e) {
     res.status(500).json({ error: e.message });

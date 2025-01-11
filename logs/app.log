@@ -200,3 +200,7 @@
 [2025-01-11T03:13:34.625Z] INFO: Successfully connected to the database
 [2025-01-11T03:17:30.959Z] INFO: Server is running on port 3000
 [2025-01-11T03:17:36.196Z] INFO: Successfully connected to the database
+[2025-01-11T13:34:31.687Z] INFO: Server is running on http://localhost:5000
+[2025-01-11T13:34:36.681Z] INFO: MongoDb Connection cluster0-shard-00-00.g8ogg.mongodb.net Successful.
+[2025-01-11T14:07:28.458Z] INFO: Server is running on http://localhost:5000
+[2025-01-11T14:07:34.134Z] INFO: MongoDb Connection cluster0-shard-00-00.g8ogg.mongodb.net Successful.

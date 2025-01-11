@@ -1,6 +1,7 @@
 import express from 'express';
 import Muscular_System from '../models/muscular_system.mjs';
 import {logger} from '../middlewares/winston_logger.mjs';
+import {validate_route_param_id} from 'middlewares/validate_request.mjs';
 
 const router = express.Router();
 
@@ -46,7 +47,7 @@ router.get('/filter/:param', async (req, res) => {
   }
 });
 // Retrieve by id
-router.get('/:id', async (req, res) => {
+router.get('/:id', validate_route_param_id, async (req, res) => {
   try {
     const get_one = await Muscular_System.findById(req.params.id);
     res.json(get_one);
@@ -67,7 +68,7 @@ router.post('/', async (req, res) => {
   }
 });
 //Update muscle by id
-router.put('/:id', async (req,res)=>{
+router.put('/:id', validate_route_param_id, async (req,res)=>{
   try {
     const update= await Muscular_System.findByIdAndUpdate(req.params.id, req.body)
     res.json(update)
@@ -76,7 +77,7 @@ router.put('/:id', async (req,res)=>{
   }
 })
 //Delete by id
-router.delete('/:id', async (req,res)=>{
+router.delete('/:id', validate_route_param_id, async (req,res)=>{
   try{
     const delete_one = await Muscular_System.findByIdAndDelete(req.params.id)
     logger.warn('Delete attempted!')
