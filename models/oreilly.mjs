@@ -7,5 +7,5 @@ const SkeletalSystemSchema = new mongoose.Schema({
   }
 })
 
-const Skeletal_System = mongoose.model('Skeletal_System', SkeletalSystemSchema);
-export default Skeletal_System;
+const Oreilly = mongoose.model('Oreilly', SkeletalSystemSchema);
+export default Oreilly;

@@ -15,5 +15,5 @@ const MuscularSystemSchema = new mongoose.Schema({
   }
 })
 
-const Muscular_System = mongoose.model('Muscular_System', MuscularSystemSchema);
-export default Muscular_System;
+const Murach = mongoose.model('Murach', MuscularSystemSchema);
+export default Murach;

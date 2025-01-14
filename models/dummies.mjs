@@ -11,5 +11,5 @@ const PhysiologySchema = new mongoose.Schema({
   }
 })
 
-const Physiology = mongoose.model('Physiology', PhysiologySchema);
-export default Physiology;
+const Dummies = mongoose.model('Dummies', PhysiologySchema);
+export default Dummies;
