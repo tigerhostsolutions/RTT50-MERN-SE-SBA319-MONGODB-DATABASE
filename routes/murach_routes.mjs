@@ -1,5 +1,5 @@
 import express from 'express';
-import Muscular_System from '../models/muscular_system.mjs';
+import Murach from 'models/murach.mjs';
 import {logger} from '../middlewares/winston_logger.mjs';
 import {validate_route_param_id} from '../middlewares/validate_request.mjs';
 
@@ -8,7 +8,7 @@ const router = express.Router();
 // Delete All
 router.delete('/', async (req,res)=>{
   try{
-    const delete_all = await Muscular_System.deleteMany({})
+    const delete_all = await Murach.deleteMany({})
     logger.warn('Delete attempted!')
     console.warn('Delete attempted!')
     res.json(delete_all)
@@ -28,7 +28,7 @@ router.get('/', async (req, res) => {
     if (insertion) filters.insertion = { $regex: insertion, $options: 'i' };
 
     // Perform the filtered search
-    const results = await Muscular_System.find(filters);
+    const results = await Murach.find(filters);
     res.json(results);
   } catch (e) {
     res.status(500).json({ errors: e.message });
@@ -38,7 +38,7 @@ router.get('/', async (req, res) => {
 router.get('/filter/:param', async (req, res) => {
   try {
     const filter_key = req.params.param.toLowerCase();
-    const filtered_data = await Muscular_System.find({
+    const filtered_data = await Murach.find({
       name: { $regex: new RegExp(filter_key, "i") },
     });
     res.json(filtered_data);
@@ -49,7 +49,7 @@ router.get('/filter/:param', async (req, res) => {
 // Retrieve by id
 router.get('/:id', validate_route_param_id, async (req, res) => {
   try {
-    const get_one = await Muscular_System.findById(req.params.id);
+    const get_one = await Murach.findById(req.params.id);
     res.json(get_one);
   }
   catch (e) {
@@ -59,7 +59,7 @@ router.get('/:id', validate_route_param_id, async (req, res) => {
 //Add new muscle
 router.post('/', async (req, res) => {
   try {
-    const create = await Muscular_System.create(req.body);
+    const create = await Murach.create(req.body);
     console.log(req.body);
     res.json(create);
   }
@@ -70,7 +70,7 @@ router.post('/', async (req, res) => {
 //Update muscle by id
 router.put('/:id', validate_route_param_id, async (req,res)=>{
   try {
-    const update= await Muscular_System.findByIdAndUpdate(req.params.id, req.body)
+    const update= await Murach.findByIdAndUpdate(req.params.id, req.body)
     res.json(update)
   }catch (e) {
     res.status(500).json({error: e.message})
@@ -79,7 +79,7 @@ router.put('/:id', validate_route_param_id, async (req,res)=>{
 //Delete by id
 router.delete('/:id', validate_route_param_id, async (req,res)=>{
   try{
-    const delete_one = await Muscular_System.findByIdAndDelete(req.params.id)
+    const delete_one = await Murach.findByIdAndDelete(req.params.id)
     logger.warn('Delete attempted!')
     console.warn('Delete attempted!')
     res.json(delete_one)

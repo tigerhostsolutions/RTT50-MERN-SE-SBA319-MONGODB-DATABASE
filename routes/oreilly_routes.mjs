@@ -1,5 +1,5 @@
 import express from 'express';
-import Skeletal_System from '../models/skeletal_system.mjs';
+import Oreilly from 'models/oreilly.mjs';
 import {validate_route_param_id} from '../middlewares/validate_request.mjs';
 import {logger} from '../middlewares/winston_logger.mjs';
 
@@ -8,7 +8,7 @@ const router = express.Router();
 // Delete All
 router.delete('/', async (req, res) => {
   try {
-    const delete_all = await Skeletal_System.deleteMany({});
+    const delete_all = await Oreilly.deleteMany({});
     logger.warn('Delete attempted!');
     console.warn('Delete attempted!');
     res.json(delete_all);
@@ -28,7 +28,7 @@ router.get('/', async (req, res) => {
     if (insertion) filters.insertion = { $regex: insertion, $options: 'i' };
 
     // Perform the filtered search
-    const results = await Skeletal_System.find(filters);
+    const results = await Oreilly.find(filters);
     res.json(results);
   } catch (e) {
     res.status(500).json({ errors: e.message });
@@ -38,7 +38,7 @@ router.get('/', async (req, res) => {
 router.get('/filter/:param', async (req, res) => {
   try {
     const filter_key = req.params.param.toLowerCase();
-    const filtered_data = await Skeletal_System.find({
+    const filtered_data = await Oreilly.find({
       name: { $regex: new RegExp(filter_key, "i") },
     });
     res.json(filtered_data);
@@ -49,7 +49,7 @@ router.get('/filter/:param', async (req, res) => {
 // Retrieve All
 router.get('/', async (req, res) => {
   try {
-    const get_all = await Skeletal_System.find({});
+    const get_all = await Oreilly.find({});
     res.json(get_all);
   } catch (e) {
     res.status(500).json({ errors: e.message });
@@ -58,7 +58,7 @@ router.get('/', async (req, res) => {
 // Retrieve by id
 router.get('/:id', validate_route_param_id, async (req, res) => {
   try {
-    const get_one = await Skeletal_System.findById(req.params.id);
+    const get_one = await Oreilly.findById(req.params.id);
     res.json(get_one);
   } catch (e) {
     res.status(500).json({ error: e.message });
@@ -67,7 +67,7 @@ router.get('/:id', validate_route_param_id, async (req, res) => {
 // Add new
 router.post('/', async (req, res) => {
   try {
-    const create = await Skeletal_System.create(req.body);
+    const create = await Oreilly.create(req.body);
     console.log(req.body);
     res.json(create);
   } catch (e) {
@@ -77,7 +77,7 @@ router.post('/', async (req, res) => {
 // Update by id
 router.put('/:id', validate_route_param_id, async (req, res) => {
   try {
-    const update = await Skeletal_System.findByIdAndUpdate(req.params.id, req.body);
+    const update = await Oreilly.findByIdAndUpdate(req.params.id, req.body);
     res.json(update);
   } catch (e) {
     res.status(500).json({ error: e.message });
@@ -86,7 +86,7 @@ router.put('/:id', validate_route_param_id, async (req, res) => {
 // Delete by id
 router.delete('/:id', validate_route_param_id,async (req, res) => {
   try {
-    const delete_one = await Skeletal_System.findByIdAndDelete(req.params.id);
+    const delete_one = await Oreilly.findByIdAndDelete(req.params.id);
     logger.warn('Delete attempted!');
     console.warn('Delete attempted!');
     res.json(delete_one);

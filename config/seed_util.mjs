@@ -3,9 +3,9 @@ import path from 'path';
 import { fileURLToPath } from 'url';
 
 // Import data models
-import Muscular_System from '../models/muscular_system.mjs';
-import Skeletal_System from '../models/skeletal_system.mjs';
-import Physiology from '../models/physiology.mjs';
+import Murach from 'models/murach.mjs';
+import OReilly from 'models/oreilly.mjs';
+import Dummies from 'models/dummies.mjs';
 
 // Get __dirname equivalent in ESM
 const __filename = fileURLToPath(import.meta.url);
@@ -23,50 +23,50 @@ async function readJsonFile(filePath) {
   }
 }
 
-async function seedMuscularSystem() {
+async function seedMurach() {
   try {
-    const exists = await Muscular_System.findOne();//Check if data already exists
+    const exists = await Murach.findOne();//Check if data already exists
     if (exists) {
-      console.log('Data for Muscular System already seeded.');
+      console.log('Data for Murach already seeded.');
       return;
     }
     //read seed data from file
-    const data = await readJsonFile('../data/muscle_seed.json');
-    await Muscular_System.insertMany(data);
-    console.log('Muscular System seeding completed.');
+    const data = await readJsonFile('../data/murach_seed.json');
+    await Murach.insertMany(data);
+    console.log('Murach seeding completed.');
   } catch (error) {
-    console.error('Error seeding Muscular System:', error.message);
+    console.error('Error seeding Murach:', error.message);
   }
 }
 
-async function seedSkeletalSystem() {
+async function seedOReilly() {
   try {
-    const exists = await Skeletal_System.findOne();
+    const exists = await OReilly.findOne();
     if (exists) {
-      console.log('Data for Skeletal System already seeded.');
+      console.log('Data for O\'Reilly already seeded.');
       return;
     }
-    const data = await readJsonFile('../data/bone_seed.json');
-    await Skeletal_System.insertMany(data);
-    console.log('Skeletal System seeding completed.');
+    const data = await readJsonFile('../data/oreilly_seed.json');
+    await OReilly.insertMany(data);
+    console.log('O\'Reilly seeding completed.');
   } catch (error) {
-    console.error('Error seeding Skeletal System:', error.message);
+    console.error('Error seeding O\'Reilly:', error.message);
   }
 }
 
-async function seedPhysiology() {
+async function seedDummies() {
   try {
-    const exists = await Physiology.findOne();
+    const exists = await Dummies.findOne();
     if (exists) {
-      console.log('Data for Physiology already seeded.');
+      console.log('Data for Dummies already seeded.');
       return;
     }
-    const data = await readJsonFile('../data/physiology_seed.json');
-    await Physiology.insertMany(data);
-    console.log('Physiology seeding completed.');
+    const data = await readJsonFile('../data/dummies_seed.json');
+    await Dummies.insertMany(data);
+    console.log('Dummies seeding completed.');
   } catch (error) {
-    console.error('Error seeding Physiology:', error.message);
+    console.error('Error seeding Dummies:', error.message);
   }
 }
 
-export { seedMuscularSystem, seedSkeletalSystem, seedPhysiology };
+export { seedMurach, seedOReilly, seedDummies };
