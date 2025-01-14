@@ -1,0 +1,53 @@
+{
+  "series": "For Dummies",
+  "books": [
+    {
+      "title": "Python For Dummies",
+      "author": "Stef Maruch, Aahz Maruch",
+      "isbn": "9780764560083",
+      "subject": "Programming",
+      "edition": "3rd Edition",
+      "year": 2023
+    },
+    {
+      "title": "Excel For Dummies",
+      "author": "Greg Harvey",
+      "isbn": "9781119830734",
+      "subject": "Spreadsheets",
+      "edition": "6th Edition",
+      "year": 2022
+    },
+    {
+      "title": "Linux For Dummies",
+      "author": "Richard Blum",
+      "isbn": "9780470467015",
+      "subject": "Operating Systems",
+      "edition": "9th Edition",
+      "year": 2020
+    },
+    {
+      "title": "Machine Learning For Dummies",
+      "author": "John Paul Mueller, Luca Massaron",
+      "isbn": "9781119724019",
+      "subject": "Artificial Intelligence",
+      "edition": "2nd Edition",
+      "year": 2021
+    },
+    {
+      "title": "Coding All-in-One For Dummies",
+      "author": "Nikhil Abraham",
+      "isbn": "9781119363027",
+      "subject": "Programming",
+      "edition": "2nd Edition",
+      "year": 2017
+    },
+    {
+      "title": "HTML, CSS & JavaScript For Dummies",
+      "author": "David Karlins",
+      "isbn": "9781118289380",
+      "subject": "Web Development",
+      "edition": "1st Edition",
+      "year": 2022
+    }
+  ]
+}

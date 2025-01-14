@@ -1,0 +1,45 @@
+{
+  "publisher": "Murach Publishing",
+  "textbooks": [
+    {
+      "title": "Murach's SQL Server 2019 for Developers",
+      "author": "Bryan Syverson, Joel Murach",
+      "isbn": "9781890774967",
+      "subject": "Databases",
+      "edition": "4th Edition",
+      "year": 2020
+    },
+    {
+      "title": "Murach's Java Programming",
+      "author": "Joel Murach, Michael Urban",
+      "isbn": "9781943872077",
+      "subject": "Programming",
+      "edition": "5th Edition",
+      "year": 2021
+    },
+    {
+      "title": "Murach's Python Programming",
+      "author": "Joel Murach, Michael Urban",
+      "isbn": "9781943872732",
+      "subject": "Programming",
+      "edition": "2nd Edition",
+      "year": 2023
+    },
+    {
+      "title": "Murach's HTML5 and CSS3",
+      "author": "Zak Ruvalcaba, Anne Boehm",
+      "isbn": "9781890774837",
+      "subject": "Web Development",
+      "edition": "4th Edition",
+      "year": 2023
+    },
+    {
+      "title": "Murach's C# 2015",
+      "author": "Anne Boehm, Joel Murach",
+      "isbn": "9781890774929",
+      "subject": "Programming",
+      "edition": "6th Edition",
+      "year": 2016
+    }
+  ]
+}

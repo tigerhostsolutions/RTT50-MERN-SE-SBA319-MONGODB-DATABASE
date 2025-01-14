@@ -1,0 +1,69 @@
+{
+  "publisher": "O'Reilly Media",
+  "books": [
+    {
+      "title": "Learning Python",
+      "author": "Mark Lutz",
+      "isbn": "9781449355739",
+      "subject": "Programming",
+      "edition": "5th Edition",
+      "year": 2013
+    },
+    {
+      "title": "Fluent Python",
+      "author": "Luciano Ramalho",
+      "isbn": "9781492056355",
+      "subject": "Programming",
+      "edition": "2nd Edition",
+      "year": 2022
+    },
+    {
+      "title": "JavaScript: The Good Parts",
+      "author": "Douglas Crockford",
+      "isbn": "9780596517748",
+      "subject": "Programming",
+      "edition": "1st Edition",
+      "year": 2008
+    },
+    {
+      "title": "Designing Data-Intensive Applications",
+      "author": "Martin Kleppmann",
+      "isbn": "9781449373320",
+      "subject": "Data Engineering",
+      "edition": "1st Edition",
+      "year": 2017
+    },
+    {
+      "title": "Head First Java",
+      "author": "Kathy Sierra, Bert Bates",
+      "isbn": "9780596009204",
+      "subject": "Programming",
+      "edition": "2nd Edition",
+      "year": 2005
+    },
+    {
+      "title": "You Don’t Know JS: Scope & Closures",
+      "author": "Kyle Simpson",
+      "isbn": "9781449335588",
+      "subject": "JavaScript",
+      "edition": "1st Edition",
+      "year": 2014
+    },
+    {
+      "title": "Python Data Science Handbook",
+      "author": "Jake VanderPlas",
+      "isbn": "9781491912058",
+      "subject": "Data Science",
+      "edition": "1st Edition",
+      "year": 2016
+    },
+    {
+      "title": "AI-Powered Search",
+      "author": "Trey Grainger, Doug Turnbull",
+      "isbn": "9781098106813",
+      "subject": "Artificial Intelligence",
+      "edition": "1st Edition",
+      "year": 2023
+    }
+  ]
+}
