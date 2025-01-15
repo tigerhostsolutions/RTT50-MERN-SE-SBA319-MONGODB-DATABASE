@@ -42,7 +42,7 @@ app.get('/', (req, res) => {
       `<a href="http://localhost:${port}/api/books/murach" target="_blank">Murach List</a>`+ '<br/>'+
       `<a href="http://localhost:${port}/api/books/oreilly" target="_blank">O'Reilly List</a>`+ '<br/>'+
       `<a href="http://localhost:${port}/api/books/dummies_cis" target="_blank">Dummies CIS List</a>` + '<br/>' +
-      `<a href="http://localhost:${port}/api/books/dummies_travels" target="_blank">Dummies Travel List</a>`);
+      `<a href="http://localhost:${port}/api/books/dummies_travel" target="_blank">Dummies Travel List</a>`);
 });
 
 app.use('/api', seed_routes);
