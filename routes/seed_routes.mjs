@@ -1,6 +1,11 @@
 import express from 'express';
 const router = express.Router();
-import {seedMurach, seedOReilly, seedDummies} from '../config/seed_util.mjs';
+import {
+  seedMurach,
+  seedOReilly,
+  seedDummies,
+  seedDummiesTravel,
+} from '../config/seed_util.mjs';
 
 router.get('/seed/books/murach', async (req, res) => {
   try {
@@ -20,18 +25,27 @@ router.get('/seed/books/oreilly', async (req, res) => {
   }
 });
 
-router.get('/seed/books/dummies', async (req, res) => {
+router.get('/seed/books/dummies_cis', async (req, res) => {
   try {
     await seedDummies();
-    res.status(200).send('Dummies seeding requested!');
+    res.status(200).send('Dummies CIS seeding requested!');
   } catch (error) {
-    res.status(500).send(`Error seeding Dummies: ${error.message}`);
+    res.status(500).send(`Error seeding Dummies CIS: ${error.message}`);
+  }
+});
+
+router.get('/seed/books/dummies_travel', async (req, res) => {
+  try {
+    await seedDummiesTravel();
+    res.status(200).send('Dummies Travel seeding requested!');
+  } catch (error) {
+    res.status(500).send(`Error seeding Dummies Travel: ${error.message}`);
   }
 });
 
 router.get('/seed/books/all', async (req, res) => {
   try {
-    const promises = [seedMurach(), seedOReilly(), seedDummies()];
+    const promises = [seedMurach(), seedOReilly(), seedDummies(), seedDummiesTravel()];
     await Promise.all(promises); // Seed multiple models in parallel
     res.status(200).send('Seeding for all models completed!');
   } catch (error) {

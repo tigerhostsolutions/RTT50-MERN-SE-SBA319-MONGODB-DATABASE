@@ -1,45 +1,234 @@
+[
+  {
+    "title": "Murach's SQL Server 2019 for Developers",
+    "author": "Bryan Syverson, Joel Murach",
+    "isbn": "9781890774967",
+    "subject": "Databases",
+    "edition": "4th Edition",
+    "year": 2020
+  },
+  {
+    "title": "Murach's Java Programming",
+    "author": "Joel Murach, Michael Urban",
+    "isbn": "9781943872077",
+    "subject": "Programming",
+    "edition": "5th Edition",
+    "year": 2021
+  },
+  {
+    "title": "Murach's Python Programming",
+    "author": "Joel Murach, Michael Urban",
+    "isbn": "9781943872732",
+    "subject": "Programming",
+    "edition": "2nd Edition",
+    "year": 2023
+  },
+  {
+    "title": "Murach's HTML5 and CSS3",
+    "author": "Zak Ruvalcaba, Anne Boehm",
+    "isbn": "9781890774837",
+    "subject": "Web Development",
+    "edition": "4th Edition",
+    "year": 2023
+  },
+  {
+    "title": "Murach's C# 2015",
+    "author": "Anne Boehm, Joel Murach",
+    "isbn": "9781890774929",
+    "subject": "Programming",
+    "edition": "6th Edition",
+    "year": 2016
+  },
+  {
+    "title": "Murach's JavaScript and jQuery",
+    "author": "Zak Ruvalcaba, Anne Boehm",
+    "isbn": "9781943872008",
+    "subject": "Programming",
+    "edition": "3rd Edition",
+    "year": 2022
+  },
+  {
+    "title": "Murach's ASP.NET Core MVC",
+    "author": "Joel Murach, Mary Delamater",
+    "isbn": "9781943872138",
+    "subject": "Web Development",
+    "edition": "1st Edition",
+    "year": 2021
+  },
+  {
+    "title": "Murach's MySQL",
+    "author": "Joel Murach",
+    "isbn": "9781890774622",
+    "subject": "Databases",
+    "edition": "2nd Edition",
+    "year": 2020
+  },
+  {
+    "title": "Murach's Visual Basic 2019",
+    "author": "Anne Boehm, Joel Murach",
+    "isbn": "9781943872121",
+    "subject": "Programming",
+    "edition": "6th Edition",
+    "year": 2019
+  },
+  {
+    "title": "Murach's Data Science and Machine Learning",
+    "author": "Joel Murach",
+    "isbn": "9781943872756",
+    "subject": "Data Science",
+    "edition": "1st Edition",
+    "year": 2021
+  },
+  {
+    "title": "Murach's Linux Programming",
+    "author": "Joel Murach",
+    "isbn": "9781890774592",
+    "subject": "Operating Systems",
+    "edition": "2nd Edition",
+    "year": 2018
+  },
+  {
+    "title": "Murach's Java Servlets and JSP",
+    "author": "Joel Murach, Michael Urban",
+    "isbn": "9781890774591",
+    "subject": "Web Development",
+    "edition": "3rd Edition",
+    "year": 2017
+  },
+  {
+    "title": "Murach's Data Structures and Algorithms",
+    "author": "Bryan Syverson",
+    "isbn": "9781890774980",
+    "subject": "Computer Science",
+    "edition": "1st Edition",
+    "year": 2020
+  },
+  {
+    "title": "Murach's Cybersecurity Essentials",
+    "author": "Joel Murach",
+    "isbn": "9781943872237",
+    "subject": "Cybersecurity",
+    "edition": "1st Edition",
+    "year": 2022
+  },
+  {
+    "title": "Murach's Networking Fundamentals",
+    "author": "Anne Boehm, Joel Murach",
+    "isbn": "9781943872398",
+    "subject": "Networking",
+    "edition": "2nd Edition",
+    "year": 2023
+  },
+  {
+    "title": "Murach's Cloud Computing",
+    "author": "Joel Murach",
+    "isbn": "9781943872541",
+    "subject": "Cloud Computing",
+    "edition": "1st Edition",
+    "year": 2021
+  },
+  {
+    "title": "Murach's Angular Development",
+    "author": "Anne Boehm, Joel Murach",
+    "isbn": "9781943872600",
+    "subject": "Web Development",
+    "edition": "1st Edition",
+    "year": 2023
+  },
+  {
+    "title": "Murach's React Programming",
+    "author": "Anne Boehm",
+    "isbn": "9781943872815",
+    "subject": "Web Development",
+    "edition": "1st Edition",
+    "year": 2022
+  },
+  {
+    "title": "Murach's PHP and MySQL",
+    "author": "Joel Murach",
+    "isbn": "9781890774463",
+    "subject": "Web Development",
+    "edition": "3rd Edition",
+    "year": 2018
+  },
+  {
+    "title": "Murach's Kubernetes for Developers",
+    "author": "Anne Boehm",
+    "isbn": "9781943872648",
+    "subject": "Cloud Computing",
+    "edition": "1st Edition",
+    "year": 2020
+  },
 {
-  "publisher": "Murach Publishing",
-  "textbooks": [
-    {
-      "title": "Murach's SQL Server 2019 for Developers",
-      "author": "Bryan Syverson, Joel Murach",
-      "isbn": "9781890774967",
-      "subject": "Databases",
-      "edition": "4th Edition",
-      "year": 2020
-    },
-    {
-      "title": "Murach's Java Programming",
-      "author": "Joel Murach, Michael Urban",
-      "isbn": "9781943872077",
-      "subject": "Programming",
-      "edition": "5th Edition",
-      "year": 2021
-    },
-    {
-      "title": "Murach's Python Programming",
-      "author": "Joel Murach, Michael Urban",
-      "isbn": "9781943872732",
-      "subject": "Programming",
-      "edition": "2nd Edition",
-      "year": 2023
-    },
-    {
-      "title": "Murach's HTML5 and CSS3",
-      "author": "Zak Ruvalcaba, Anne Boehm",
-      "isbn": "9781890774837",
-      "subject": "Web Development",
-      "edition": "4th Edition",
-      "year": 2023
-    },
-    {
-      "title": "Murach's C# 2015",
-      "author": "Anne Boehm, Joel Murach",
-      "isbn": "9781890774929",
-      "subject": "Programming",
-      "edition": "6th Edition",
-      "year": 2016
-    }
-  ]
+  "title": "Murach's Software Design Patterns",
+  "author": "Joel Murach",
+  "isbn": "9781943873201",
+  "subject": "Software Engineering",
+  "edition": "1st Edition",
+  "year": 2023
+},
+{
+"title": "Murach's Docker Essentials",
+"author": "Joel Murach",
+"isbn": "9781943873218",
+"subject": "DevOps",
+"edition": "1st Edition",
+"year": 2022
+},
+{
+"title": "Murach's Artificial Intelligence",
+"author": "Joel Murach",
+"isbn": "9781943873133",
+"subject": "Artificial Intelligence",
+"edition": "1st Edition",
+"year": 2023
+},
+{
+"title": "Murach's PowerShell Administration",
+"author": "Ann Miller",
+"isbn": "9781943873157",
+"subject": "System Administration",
+"edition": "1st Edition",
+"year": 2021
+},
+{
+"title": "Murach's Database Optimization",
+"author": "Bryan Syverson",
+"isbn": "9781890774617",
+"subject": "Databases",
+"edition": "1st Edition",
+"year": 2022
+},
+{
+"title": "Murach's Cyber Security Practices",
+"author": "Joel Murach",
+"isbn": "9781943873171",
+"subject": "Cybersecurity",
+"edition": "1st Edition",
+"year": 2023
+},
+{
+"title": "Murach's AI for Beginners",
+"author": "Anne Boehm",
+"isbn": "9781943873451",
+"subject": "Artificial Intelligence",
+"edition": "1st Edition",
+"year": 2022
+},
+{
+"title": "Murach's Cloud Architecture",
+"author": "Joel Murach",
+"isbn": "9781943873588",
+"subject": "Cloud Computing",
+"edition": "1st Edition",
+"year": 2023
+},
+{
+"title": "Murach's Advanced Python Techniques",
+"author": "Joel Murach",
+"isbn": "9781943873675",
+"subject": "Programming",
+"edition": "1st Edition",
+"year": 2023
 }
+]

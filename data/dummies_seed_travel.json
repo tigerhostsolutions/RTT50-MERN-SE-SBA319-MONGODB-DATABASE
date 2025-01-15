@@ -1,0 +1,242 @@
+[
+  {
+    "title": "Paris For Dummies",
+    "author": "Joseph Alexiou",
+    "isbn": "9780764567938",
+    "destination": "Paris, France",
+    "edition": "4th Edition",
+    "year": 2020
+  },
+  {
+    "title": "Italy For Dummies",
+    "author": "Bruce Murphy, Alessandra de Rosa",
+    "isbn": "9781119507690",
+    "destination": "Italy",
+    "edition": "9th Edition",
+    "year": 2019
+  },
+  {
+    "title": "Travel Photography For Dummies",
+    "author": "Nigel Atherton",
+    "isbn": "9780764598086",
+    "destination": "Global",
+    "edition": "1st Edition",
+    "year": 2005
+  },
+  {
+    "title": "Walt Disney World For Dummies",
+    "author": "Laura Lea Miller",
+    "isbn": "9780470436099",
+    "destination": "Orlando, Florida",
+    "edition": "4th Edition",
+    "year": 2012
+  },
+  {
+    "title": "New Zealand For Dummies",
+    "author": "Shaun Barnett",
+    "isbn": "9781742169622",
+    "destination": "New Zealand",
+    "edition": "3rd Edition",
+    "year": 2016
+  },
+  {
+    "title": "London For Dummies",
+    "author": "Donald Olson",
+    "isbn": "9781119971278",
+    "destination": "London, England",
+    "edition": "8th Edition",
+    "year": 2019
+  },
+  {
+    "title": "Hawaii For Dummies",
+    "author": "Cheryl Farr Leas",
+    "isbn": "9780470632316",
+    "destination": "Hawaii, USA",
+    "edition": "6th Edition",
+    "year": 2011
+  },
+  {
+    "title": "Tokyo For Dummies",
+    "author": "Beth Reiber",
+    "isbn": "9780764570655",
+    "destination": "Tokyo, Japan",
+    "edition": "3rd Edition",
+    "year": 2005
+  },
+  {
+    "title": "Disneyland For Dummies",
+    "author": "Kim Wright Wiley",
+    "isbn": "9780764575605",
+    "destination": "Anaheim, California",
+    "edition": "5th Edition",
+    "year": 2008
+  },
+  {
+    "title": "Ireland For Dummies",
+    "author": "Elizabeth Albertson",
+    "isbn": "9780470632293",
+    "destination": "Ireland",
+    "edition": "6th Edition",
+    "year": 2010
+  },
+  {
+    "title": "Australia For Dummies",
+    "author": "Marc Llewellyn, Lee Mylne",
+    "isbn": "9781118381979",
+    "destination": "Australia",
+    "edition": "7th Edition",
+    "year": 2012
+  },
+  {
+    "title": "Las Vegas For Dummies",
+    "author": "Rick Garman",
+    "isbn": "9781118006308",
+    "destination": "Las Vegas, Nevada",
+    "edition": "7th Edition",
+    "year": 2011
+  },
+  {
+    "title": "Germany For Dummies",
+    "author": "Donald Olson, Stephen Brewer",
+    "isbn": "9781118008159",
+    "destination": "Germany",
+    "edition": "5th Edition",
+    "year": 2013
+  },
+  {
+    "title": "France For Dummies",
+    "author": "Jane Anson, Mark Connolly",
+    "isbn": "9780764567778",
+    "destination": "France",
+    "edition": "3rd Edition",
+    "year": 2006
+  },
+  {
+    "title": "Spain For Dummies",
+    "author": "Neil Edward Schlecht",
+    "isbn": "9780764583853",
+    "destination": "Spain",
+    "edition": "6th Edition",
+    "year": 2008
+  },
+  {
+    "title": "Scotland For Dummies",
+    "author": "Barry Shelby",
+    "isbn": "9781119952109",
+    "destination": "Scotland",
+    "edition": "3rd Edition",
+    "year": 2012
+  },
+  {
+    "title": "Swiss Alps For Dummies",
+    "author": "Matthew Howenstein",
+    "isbn": "9780764550015",
+    "destination": "Swiss Alps, Switzerland",
+    "edition": "1st Edition",
+    "year": 2000
+  },
+  {
+    "title": "Cruises For Dummies",
+    "author": "Fran Wenograd Golden, Jerry Brown",
+    "isbn": "9781119828251",
+    "destination": "Global Cruises",
+    "edition": "6th Edition",
+    "year": 2021
+  },
+  {
+    "title": "Mexico For Dummies",
+    "author": "Lesley Peterson",
+    "isbn": "9780470552089",
+    "destination": "Mexico",
+    "edition": "8th Edition",
+    "year": 2010
+  },
+  {
+    "title": "China For Dummies",
+    "author": "Charlene Chan",
+    "isbn": "9781118375640",
+    "destination": "China",
+    "edition": "4th Edition",
+    "year": 2015
+  },
+  {
+    "title": "Greece For Dummies",
+    "author": "John S. Bowman",
+    "isbn": "9780764597355",
+    "destination": "Greece",
+    "edition": "9th Edition",
+    "year": 2005
+  },
+  {
+    "title": "Caribbean For Dummies",
+    "author": "Katia Carter",
+    "isbn": "9780764596211",
+    "destination": "Caribbean Islands",
+    "edition": "5th Edition",
+    "year": 2008
+  },
+  {
+    "title": "Thailand For Dummies",
+    "author": "Robert Storey",
+    "isbn": "9781118254560",
+    "destination": "Thailand",
+    "edition": "5th Edition",
+    "year": 2011
+  },
+  {
+    "title": "Canada For Dummies",
+    "author": "Chris Johnstone",
+    "isbn": "9780470959905",
+    "destination": "Canada",
+    "edition": "6th Edition",
+    "year": 2012
+  },
+  {
+    "title": "Cruising For Dummies",
+    "author": "Consumer Dummies",
+    "isbn": "9780470870453",
+    "destination": "Global Cruises",
+    "edition": "8th Edition",
+    "year": 2009
+  },
+  {
+    "title": "Africa For Dummies",
+    "author": "Mary Fitzpatrick",
+    "isbn": "9780471950222",
+    "destination": "Africa",
+    "edition": "2nd Edition",
+    "year": 2018
+  },
+  {
+    "title": "Argentina For Dummies",
+    "author": "Nicholas Mills",
+    "isbn": "9781118288696",
+    "destination": "Argentina",
+    "edition": "4th Edition",
+    "year": 2010
+  },
+  {
+    "title": "Portugal For Dummies",
+    "author": "Jeffrey Kennedy",
+    "isbn": "9780764579672",
+    "destination": "Portugal",
+    "edition": "6th Edition",
+    "year": 2011
+  },
+  {
+    "title": "Antarctica For Dummies",
+    "author": "John Charles",
+    "isbn": "9781118055692",
+    "destination": "Antarctica",
+    "edition": "1st Edition",
+    "year": 2017
+  },
+  {
+    "title": "South Pacific For Dummies",
+    "author": "Glenda Bendure",
+    "isbn": "9780764584560",
+    "destination": "South Pacific Islands",
+    "edition": "4th Edition",
+    "year": 2006
+  }
+]

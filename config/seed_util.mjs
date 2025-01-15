@@ -5,7 +5,8 @@ import { fileURLToPath } from 'url';
 // Import data models
 import Murach from '../models/murach.mjs';
 import OReilly from '../models/oreilly.mjs';
-import Dummies from '../models/dummies.mjs';
+import DummiesCis from '../models/dummies_cis.mjs';
+import DummiesTravel from '../models/dummies_travel.mjs';
 
 // Get __dirname equivalent in ESM
 const __filename = fileURLToPath(import.meta.url);
@@ -56,17 +57,32 @@ async function seedOReilly() {
 
 async function seedDummies() {
   try {
-    const exists = await Dummies.findOne();
+    const exists = await DummiesCis.findOne();
     if (exists) {
-      console.log('Data for Dummies already seeded.');
+      console.log('Data for Dummies CIS already seeded.');
       return;
     }
-    const data = await readJsonFile('../data/dummies_seed.json');
-    await Dummies.insertMany(data);
-    console.log('Dummies seeding completed.');
+    const data = await readJsonFile('../data/dummies_seed_cis.json');
+    await DummiesCis.insertMany(data);
+    console.log('Dummies CIS seeding completed.');
   } catch (error) {
-    console.error('Error seeding Dummies:', error.message);
+    console.error('Error seeding Dummies CIS:', error.message);
   }
 }
 
-export { seedMurach, seedOReilly, seedDummies };
+async function seedDummiesTravel() {
+  try {
+    const exists = await DummiesTravel.findOne();
+    if (exists) {
+      console.log('Data for Dummies Travel already seeded.');
+      return;
+    }
+    const data = await readJsonFile('../data/dummies_seed_travel.json');
+    await DummiesTravel.insertMany(data);
+    console.log('Dummies Travel seeding completed.');
+  } catch (error) {
+    console.error('Error seeding Dummies Travel:', error.message);
+  }
+}
+
+export { seedMurach, seedOReilly, seedDummies, seedDummiesTravel};

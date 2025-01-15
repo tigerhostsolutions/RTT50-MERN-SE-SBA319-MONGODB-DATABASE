@@ -1,69 +1,242 @@
-{
-  "publisher": "O'Reilly Media",
-  "books": [
-    {
-      "title": "Learning Python",
-      "author": "Mark Lutz",
-      "isbn": "9781449355739",
-      "subject": "Programming",
-      "edition": "5th Edition",
-      "year": 2013
-    },
-    {
-      "title": "Fluent Python",
-      "author": "Luciano Ramalho",
-      "isbn": "9781492056355",
-      "subject": "Programming",
-      "edition": "2nd Edition",
-      "year": 2022
-    },
-    {
-      "title": "JavaScript: The Good Parts",
-      "author": "Douglas Crockford",
-      "isbn": "9780596517748",
-      "subject": "Programming",
-      "edition": "1st Edition",
-      "year": 2008
-    },
-    {
-      "title": "Designing Data-Intensive Applications",
-      "author": "Martin Kleppmann",
-      "isbn": "9781449373320",
-      "subject": "Data Engineering",
-      "edition": "1st Edition",
-      "year": 2017
-    },
-    {
-      "title": "Head First Java",
-      "author": "Kathy Sierra, Bert Bates",
-      "isbn": "9780596009204",
-      "subject": "Programming",
-      "edition": "2nd Edition",
-      "year": 2005
-    },
-    {
-      "title": "You Don’t Know JS: Scope & Closures",
-      "author": "Kyle Simpson",
-      "isbn": "9781449335588",
-      "subject": "JavaScript",
-      "edition": "1st Edition",
-      "year": 2014
-    },
-    {
-      "title": "Python Data Science Handbook",
-      "author": "Jake VanderPlas",
-      "isbn": "9781491912058",
-      "subject": "Data Science",
-      "edition": "1st Edition",
-      "year": 2016
-    },
-    {
-      "title": "AI-Powered Search",
-      "author": "Trey Grainger, Doug Turnbull",
-      "isbn": "9781098106813",
-      "subject": "Artificial Intelligence",
-      "edition": "1st Edition",
-      "year": 2023
-    }
-  ]
-}
+[
+  {
+    "title": "Learning Python",
+    "author": "Mark Lutz",
+    "isbn": "9781449355739",
+    "subject": "Programming",
+    "edition": "5th Edition",
+    "year": 2013
+  },
+  {
+    "title": "Fluent Python",
+    "author": "Luciano Ramalho",
+    "isbn": "9781492056355",
+    "subject": "Programming",
+    "edition": "2nd Edition",
+    "year": 2022
+  },
+  {
+    "title": "JavaScript: The Good Parts",
+    "author": "Douglas Crockford",
+    "isbn": "9780596517748",
+    "subject": "Programming",
+    "edition": "1st Edition",
+    "year": 2008
+  },
+  {
+    "title": "Designing Data-Intensive Applications",
+    "author": "Martin Kleppmann",
+    "isbn": "9781449373320",
+    "subject": "Data Engineering",
+    "edition": "1st Edition",
+    "year": 2017
+  },
+  {
+    "title": "Head First Java",
+    "author": "Kathy Sierra, Bert Bates",
+    "isbn": "9780596009204",
+    "subject": "Programming",
+    "edition": "2nd Edition",
+    "year": 2005
+  },
+  {
+    "title": "You Don’t Know JS: Scope & Closures",
+    "author": "Kyle Simpson",
+    "isbn": "9781449335588",
+    "subject": "JavaScript",
+    "edition": "1st Edition",
+    "year": 2014
+  },
+  {
+    "title": "Python Data Science Handbook",
+    "author": "Jake VanderPlas",
+    "isbn": "9781491912058",
+    "subject": "Data Science",
+    "edition": "1st Edition",
+    "year": 2016
+  },
+  {
+    "title": "AI-Powered Search",
+    "author": "Trey Grainger, Doug Turnbull",
+    "isbn": "9781098106813",
+    "subject": "Artificial Intelligence",
+    "edition": "1st Edition",
+    "year": 2023
+  },
+  {
+    "title": "Artificial Intelligence: A Modern Approach",
+    "author": "Stuart Russell, Peter Norvig",
+    "isbn": "9780136042594",
+    "subject": "Artificial Intelligence",
+    "edition": "3rd Edition",
+    "year": 2010
+  },
+  {
+    "title": "Clean Code: A Handbook of Agile Software Craftsmanship",
+    "author": "Robert C. Martin",
+    "isbn": "9780132350884",
+    "subject": "Software Engineering",
+    "edition": "1st Edition",
+    "year": 2008
+  },
+  {
+    "title": "Introduction to Algorithms",
+    "author": "Thomas H. Cormen",
+    "isbn": "9780262033848",
+    "subject": "Algorithms",
+    "edition": "3rd Edition",
+    "year": 2009
+  },
+  {
+    "title": "Deep Learning",
+    "author": "Ian Goodfellow, Yoshua Bengio, Aaron Courville",
+    "isbn": "9780262035613",
+    "subject": "Machine Learning",
+    "edition": "1st Edition",
+    "year": 2016
+  },
+  {
+    "title": "Database System Concepts",
+    "author": "Abraham Silberschatz, Henry F. Korth, S. Sudarshan",
+    "isbn": "9780078022159",
+    "subject": "Databases",
+    "edition": "6th Edition",
+    "year": 2010
+  },
+  {
+    "title": "Operating System Concepts",
+    "author": "Abraham Silberschatz, Peter B. Galvin, Greg Gagne",
+    "isbn": "9781118063330",
+    "subject": "Operating Systems",
+    "edition": "9th Edition",
+    "year": 2012
+  },
+  {
+    "title": "Compilers: Principles, Techniques, and Tools",
+    "author": "Alfred V. Aho, Monica Lam, Ravi Sethi, Jeffrey D. Ullman",
+    "isbn": "9780321486813",
+    "subject": "Programming Languages",
+    "edition": "2nd Edition",
+    "year": 2006
+  },
+  {
+    "title": "Think Python",
+    "author": "Allen Downey",
+    "isbn": "9781491939369",
+    "subject": "Programming",
+    "edition": "2nd Edition",
+    "year": 2015
+  },
+  {
+    "title": "Hands-On Machine Learning with Scikit-Learn, Keras, and TensorFlow",
+    "author": "Aurélien Géron",
+    "isbn": "9781492032649",
+    "subject": "Machine Learning",
+    "edition": "2nd Edition",
+    "year": 2019
+  },
+  {
+    "title": "Effective Java",
+    "author": "Joshua Bloch",
+    "isbn": "9780134685991",
+    "subject": "Java",
+    "edition": "3rd Edition",
+    "year": 2017
+  },
+  {
+    "title": "The Pragmatic Programmer",
+    "author": "Andrew Hunt, David Thomas",
+    "isbn": "9780135957059",
+    "subject": "Software Engineering",
+    "edition": "20th Anniversary Edition",
+    "year": 2019
+  },
+  {
+    "title": "Patterns of Enterprise Application Architecture",
+    "author": "Martin Fowler",
+    "isbn": "9780321127426",
+    "subject": "Software Design",
+    "edition": "1st Edition",
+    "year": 2002
+  },
+  {
+    "title": "Refactoring: Improving the Design of Existing Code",
+    "author": "Martin Fowler",
+    "isbn": "9780134757599",
+    "subject": "Software Engineering",
+    "edition": "2nd Edition",
+    "year": 2018
+  },
+  {
+    "title": "Introduction to the Theory of Computation",
+    "author": "Michael Sipser",
+    "isbn": "9781133187790",
+    "subject": "Computer Science",
+    "edition": "3rd Edition",
+    "year": 2012
+  },
+  {
+    "title": "Kubernetes Up and Running",
+    "author": "Kelsey Hightower, Brendan Burns, Joe Beda",
+    "isbn": "9781492046530",
+    "subject": "DevOps",
+    "edition": "2nd Edition",
+    "year": 2019
+  },
+  {
+    "title": "Ansible for DevOps",
+    "author": "Jeff Geerling",
+    "isbn": "9780986393422",
+    "subject": "DevOps",
+    "edition": "1st Edition",
+    "year": 2020
+  },
+  {
+    "title": "Cloud Native DevOps with Kubernetes",
+    "author": "Justin Garrison, Kristen Goetz",
+    "isbn": "9781492046585",
+    "subject": "Cloud Computing",
+    "edition": "1st Edition",
+    "year": 2019
+  },
+  {
+    "title": "Terraform: Up & Running",
+    "author": "Yevgeniy Brikman",
+    "isbn": "9781492046905",
+    "subject": "DevOps",
+    "edition": "2nd Edition",
+    "year": 2019
+  },
+  {
+    "title": "Linux Command Line and Shell Scripting Bible",
+    "author": "Richard Blum, Christine Bresnahan",
+    "isbn": "9781119700913",
+    "subject": "Linux",
+    "edition": "4th Edition",
+    "year": 2021
+  },
+  {
+    "title": "Site Reliability Engineering: How Google Runs Production Systems",
+    "author": "Niall Richard Murphy, Betsy Beyer, Chris Jones, Jennifer Petoff",
+    "isbn": "9781491929124",
+    "subject": "DevOps",
+    "edition": "1st Edition",
+    "year": 2016
+  },
+  {
+    "title": "Python Crash Course",
+    "author": "Eric Matthes",
+    "isbn": "9781593279288",
+    "subject": "Programming",
+    "edition": "2nd Edition",
+    "year": 2019
+  },
+  {
+    "title": "High Performance MySQL",
+    "author": "Baron Schwartz, Peter Zaitsev, Vadim Tkachenko",
+    "isbn": "9781449314286",
+    "subject": "Databases",
+    "edition": "3rd Edition",
+    "year": 2012
+  }
+]

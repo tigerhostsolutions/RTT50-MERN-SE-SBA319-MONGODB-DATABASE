@@ -1,0 +1,234 @@
+[
+  {
+    "title": "Python For Dummies",
+    "author": "Stef Maruch, Aahz Maruch",
+    "isbn": "9780764560083",
+    "subject": "Programming",
+    "edition": "3rd Edition",
+    "year": 2023
+  },
+  {
+    "title": "Excel For Dummies",
+    "author": "Greg Harvey",
+    "isbn": "9781119830734",
+    "subject": "Spreadsheets",
+    "edition": "6th Edition",
+    "year": 2022
+  },
+  {
+    "title": "Linux For Dummies",
+    "author": "Richard Blum",
+    "isbn": "9780470467015",
+    "subject": "Operating Systems",
+    "edition": "9th Edition",
+    "year": 2020
+  },
+  {
+    "title": "Machine Learning For Dummies",
+    "author": "John Paul Mueller, Luca Massaron",
+    "isbn": "9781119724019",
+    "subject": "Artificial Intelligence",
+    "edition": "2nd Edition",
+    "year": 2021
+  },
+  {
+    "title": "Coding All-in-One For Dummies",
+    "author": "Nikhil Abraham",
+    "isbn": "9781119363027",
+    "subject": "Programming",
+    "edition": "2nd Edition",
+    "year": 2017
+  },
+  {
+    "title": "HTML, CSS & JavaScript For Dummies",
+    "author": "David Karlins",
+    "isbn": "9781118289380",
+    "subject": "Web Development",
+    "edition": "1st Edition",
+    "year": 2022
+  },
+  {
+    "title": "Java For Dummies",
+    "author": "Barry Burd",
+    "isbn": "9781119235539",
+    "subject": "Programming",
+    "edition": "7th Edition",
+    "year": 2022
+  },
+  {
+    "title": "SQL For Dummies",
+    "author": "Allen G. Taylor",
+    "isbn": "9781119821831",
+    "subject": "Databases",
+    "edition": "9th Edition",
+    "year": 2022
+  },
+  {
+    "title": "Data Science For Dummies",
+    "author": "Lillian Pierson",
+    "isbn": "9781119327630",
+    "subject": "Data Science",
+    "edition": "3rd Edition",
+    "year": 2021
+  },
+  {
+    "title": "Artificial Intelligence For Dummies",
+    "author": "John Paul Mueller, Luca Massaron",
+    "isbn": "9781119467657",
+    "subject": "Artificial Intelligence",
+    "edition": "2nd Edition",
+    "year": 2021
+  },
+  {
+    "title": "C++ For Dummies",
+    "author": "Stephen R. Davis",
+    "isbn": "9781118823775",
+    "subject": "Programming",
+    "edition": "7th Edition",
+    "year": 2014
+  },
+  {
+    "title": "Git For Dummies",
+    "author": "Sarah Guthals",
+    "isbn": "9781119572986",
+    "subject": "Version Control",
+    "edition": "1st Edition",
+    "year": 2019
+  },
+  {
+    "title": "Networking All-in-One For Dummies",
+    "author": "Doug Lowe",
+    "isbn": "9781119648506",
+    "subject": "Networking",
+    "edition": "8th Edition",
+    "year": 2021
+  },
+  {
+    "title": "AWS For Dummies",
+    "author": "Bernard Golden",
+    "isbn": "9781118661148",
+    "subject": "Cloud Computing",
+    "edition": "1st Edition",
+    "year": 2013
+  },
+  {
+    "title": "Docker For Dummies",
+    "author": "James Turnbull",
+    "isbn": "9781119630129",
+    "subject": "DevOps",
+    "edition": "1st Edition",
+    "year": 2020
+  },
+  {
+    "title": "Power BI For Dummies",
+    "author": "Jack A. Hyman",
+    "isbn": "9781119824894",
+    "subject": "Data Analytics",
+    "edition": "1st Edition",
+    "year": 2022
+  },
+  {
+    "title": "Tableau For Dummies",
+    "author": "Molly Monsey, Paul Sochan",
+    "isbn": "9781119134795",
+    "subject": "Data Visualization",
+    "edition": "1st Edition",
+    "year": 2016
+  },
+  {
+    "title": "Python All-In-One For Dummies",
+    "author": "John Shovic, Alan Simpson",
+    "isbn": "9781119787609",
+    "subject": "Programming",
+    "edition": "2nd Edition",
+    "year": 2021
+  },
+  {
+    "title": "Algorithms For Dummies",
+    "author": "John Paul Mueller, Luca Massaron",
+    "isbn": "9781119245512",
+    "subject": "Algorithms",
+    "edition": "1st Edition",
+    "year": 2017
+  },
+  {
+    "title": "CompTIA Security+ For Dummies",
+    "author": "Glen E. Clarke",
+    "isbn": "9781119860456",
+    "subject": "Cybersecurity",
+    "edition": "1st Edition",
+    "year": 2022
+  },
+  {
+    "title": "Cybersecurity For Dummies",
+    "author": "Joseph Steinberg",
+    "isbn": "9781119560325",
+    "subject": "Cybersecurity",
+    "edition": "1st Edition",
+    "year": 2019
+  },
+  {
+    "title": "Blockchain For Dummies",
+    "author": "Tiana Laurence",
+    "isbn": "9781119555017",
+    "subject": "Blockchain",
+    "edition": "2nd Edition",
+    "year": 2019
+  },
+  {
+    "title": "Microsoft Office All-in-One For Dummies",
+    "author": "Peter Weverka",
+    "isbn": "9781119828892",
+    "subject": "Office Tools",
+    "edition": "3rd Edition",
+    "year": 2022
+  },
+  {
+    "title": "Visual Studio Code For Dummies",
+    "author": "April Speight",
+    "isbn": "9781119773376",
+    "subject": "Programming",
+    "edition": "1st Edition",
+    "year": 2020
+  },
+  {
+    "title": "Rust Programming For Dummies",
+    "author": "Jim McGeown",
+    "isbn": "9781119712979",
+    "subject": "Programming",
+    "edition": "1st Edition",
+    "year": 2021
+  },
+  {
+    "title": "iOS App Development For Dummies",
+    "author": "Jesse Feiler",
+    "isbn": "9781119876170",
+    "subject": "Mobile Development",
+    "edition": "1st Edition",
+    "year": 2023
+  },
+  {
+    "title": "Android App Development For Dummies",
+    "author": "Michael Burton",
+    "isbn": "9781119819610",
+    "subject": "Mobile Development",
+    "edition": "4th Edition",
+    "year": 2021
+  },
+  {
+    "title": "Cloud Computing For Dummies",
+    "author": "Judith S. Hurwitz, Robin Bloor, Marcia Kaufman, Fern Halper",
+    "isbn": "9780470484709",
+    "subject": "Cloud Computing",
+    "edition": "2nd Edition",
+    "year": 2020
+  },
+  {
+    "title": "Web Development All-In-One For Dummies",
+    "author": "Paul McFedries",
+    "isbn": "9781119473782",
+    "subject": "Web Development",
+    "edition": "2nd Edition",
+    "year": 2018
+  }
+]
