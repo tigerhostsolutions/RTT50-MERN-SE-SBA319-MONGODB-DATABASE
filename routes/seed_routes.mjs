@@ -2,7 +2,7 @@ import express from 'express';
 const router = express.Router();
 import {seedMurach, seedOReilly, seedDummies} from '../config/seed_util.mjs';
 
-router.get('/seed/murach', async (req, res) => {
+router.get('/seed/books/murach', async (req, res) => {
   try {
     await seedMurach();
     res.status(200).send('Murach seeding requested!');
@@ -11,7 +11,7 @@ router.get('/seed/murach', async (req, res) => {
   }
 });
 
-router.get('/seed/oreilly', async (req, res) => {
+router.get('/seed/books/oreilly', async (req, res) => {
   try {
     await seedOReilly();
     res.status(200).send('O\'Reilly seeding requested!');
@@ -20,7 +20,7 @@ router.get('/seed/oreilly', async (req, res) => {
   }
 });
 
-router.get('/seed/dummies', async (req, res) => {
+router.get('/seed/books/dummies', async (req, res) => {
   try {
     await seedDummies();
     res.status(200).send('Dummies seeding requested!');
@@ -29,7 +29,7 @@ router.get('/seed/dummies', async (req, res) => {
   }
 });
 
-router.get('/seed/all', async (req, res) => {
+router.get('/seed/books/all', async (req, res) => {
   try {
     const promises = [seedMurach(), seedOReilly(), seedDummies()];
     await Promise.all(promises); // Seed multiple models in parallel

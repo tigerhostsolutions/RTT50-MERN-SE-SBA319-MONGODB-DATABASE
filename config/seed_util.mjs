@@ -3,9 +3,9 @@ import path from 'path';
 import { fileURLToPath } from 'url';
 
 // Import data models
-import Murach from 'models/murach.mjs';
-import OReilly from 'models/oreilly.mjs';
-import Dummies from 'models/dummies.mjs';
+import Murach from '../models/murach.mjs';
+import OReilly from '../models/oreilly.mjs';
+import Dummies from '../models/dummies.mjs';
 
 // Get __dirname equivalent in ESM
 const __filename = fileURLToPath(import.meta.url);
