@@ -1,5 +1,5 @@
 import express from 'express';
-import Oreilly from 'models/oreilly.mjs';
+import Oreilly from '../models/oreilly.mjs';
 import {validate_route_param_id} from '../middlewares/validate_request.mjs';
 import {logger} from '../middlewares/winston_logger.mjs';
 

@@ -1,15 +1,43 @@
 import mongoose from 'mongoose';
 
-const PhysiologySchema = new mongoose.Schema({
-  name: {
-    type:String,
-    required: true
+// Define the schema for Dummies series
+const BookSchema = new mongoose.Schema({
+  title: {
+    type: String,
+    required: true,
   },
-  purpose: {
-    type:String,
-    required: true
-  }
-})
+  author: {
+    type: String,
+    required: true,
+  },
+  isbn: {
+    type: String,
+    required: true,
+    unique: true,
+  },
+  subject: {
+    type: String,
+    required: true,
+  },
+  edition: {
+    type: String,
+    required: false,
+  },
+  year: {
+    type: Number,
+    required: true,
+  },
+});
 
-const Dummies = mongoose.model('Dummies', PhysiologySchema);
+const DummiesSeriesSchema = new mongoose.Schema({
+  series: {
+    type: String,
+    required: true,
+    default: "For Dummies",
+  },
+  books: [BookSchema],
+});
+
+// Create the Mongoose model
+const Dummies = mongoose.model("Dummies", DummiesSeriesSchema);
 export default Dummies;

@@ -1,20 +1,21 @@
 import express from 'express';
-const router = express.Router();
-import Dummies from 'models/dummies.mjs';
+import Dummies from '../models/dummies.mjs';
 import {logger} from '../middlewares/winston_logger.mjs';
+import {validate_route_param_id} from '../middlewares/validate_request.mjs';
+
+const router = express.Router();
 
 // Delete All
 router.delete('/', async (req,res)=>{
   try{
     const delete_all = await Dummies.deleteMany({})
-    logger.warn('Delete attempted!');
-    console.warn('Delete attempted!');
+    logger.warn('Delete attempted!')
+    console.warn('Delete attempted!')
     res.json(delete_all)
   }catch (e) {
     res.status(500).json({error: e.message})
   }
 })
-
 // Retrieve All or Filter by Query Parameters
 router.get('/', async (req, res) => {
   try {
@@ -27,14 +28,14 @@ router.get('/', async (req, res) => {
     if (insertion) filters.insertion = { $regex: insertion, $options: 'i' };
 
     // Perform the filtered search
-    const results = await Dummies.find(filters);
+    const results = await Dummies
+    .find(filters);
     res.json(results);
   } catch (e) {
     res.status(500).json({ errors: e.message });
   }
 });
-
-// Retrieve by Name - Route Parameters
+// Retrieve by Name - route param implementation
 router.get('/filter/:param', async (req, res) => {
   try {
     const filter_key = req.params.param.toLowerCase();
@@ -46,26 +47,50 @@ router.get('/filter/:param', async (req, res) => {
     res.status(500).json({ error: e.message });
   }
 });
-
-// Retrieve All
-router.get('/', async (req, res) => {
-  try {
-    const get_all = await Dummies.find({});
-    res.json(get_all);
-  }
-  catch (e) {
-    res.status(500).json({errors: e.message});
-  }
-});
 // Retrieve by id
-router.get('/:id', async (req, res) => {
+router.get('/:id', validate_route_param_id, async (req, res) => {
   try {
-    const get_one = await Dummies.findById(req.params.id);
+    const get_one = await Dummies
+    .findById(req.params.id);
     res.json(get_one);
   }
   catch (e) {
     res.status(500).json({error: e.message});
   }
 });
+//Add new
+router.post('/', async (req, res) => {
+  try {
+    const create = await Dummies
+    .create(req.body);
+    console.log(req.body);
+    res.json(create);
+  }
+  catch (e) {
+    res.status(500).json({error: e.message});
+  }
+});
+//Update by id
+router.put('/:id', validate_route_param_id, async (req,res)=>{
+  try {
+    const update= await Dummies
+    .findByIdAndUpdate(req.params.id, req.body)
+    res.json(update)
+  }catch (e) {
+    res.status(500).json({error: e.message})
+  }
+})
+//Delete by id
+router.delete('/:id', validate_route_param_id, async (req,res)=>{
+  try{
+    const delete_one = await Dummies
+    .findByIdAndDelete(req.params.id)
+    logger.warn('Delete attempted!')
+    console.warn('Delete attempted!')
+    res.json(delete_one)
+  }catch (e) {
+    res.status(500).json({error: e.message})
+  }
+})
 
 export default router;

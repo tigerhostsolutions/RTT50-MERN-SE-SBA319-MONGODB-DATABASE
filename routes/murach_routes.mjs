@@ -1,5 +1,5 @@
 import express from 'express';
-import Murach from 'models/murach.mjs';
+import Murach from '../models/murach.mjs';
 import {logger} from '../middlewares/winston_logger.mjs';
 import {validate_route_param_id} from '../middlewares/validate_request.mjs';
 
@@ -56,7 +56,7 @@ router.get('/:id', validate_route_param_id, async (req, res) => {
     res.status(500).json({error: e.message});
   }
 });
-//Add new muscle
+//Add new
 router.post('/', async (req, res) => {
   try {
     const create = await Murach.create(req.body);
@@ -67,7 +67,7 @@ router.post('/', async (req, res) => {
     res.status(500).json({error: e.message});
   }
 });
-//Update muscle by id
+//Update by id
 router.put('/:id', validate_route_param_id, async (req,res)=>{
   try {
     const update= await Murach.findByIdAndUpdate(req.params.id, req.body)
