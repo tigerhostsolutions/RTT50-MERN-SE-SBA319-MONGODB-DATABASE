@@ -1,5 +1,5 @@
 import express from 'express';
-import Dummies from '../models/dummies.mjs';
+import DummiesCis from '../models/dummies_cis.mjs';
 import {logger} from '../middlewares/winston_logger.mjs';
 import {validate_route_param_id} from '../middlewares/validate_request.mjs';
 
@@ -8,7 +8,7 @@ const router = express.Router();
 // Delete All
 router.delete('/', async (req,res)=>{
   try{
-    const delete_all = await Dummies.deleteMany({})
+    const delete_all = await DummiesCis.deleteMany({})
     logger.warn('Delete attempted!')
     console.warn('Delete attempted!')
     res.json(delete_all)
@@ -28,7 +28,7 @@ router.get('/', async (req, res) => {
     if (insertion) filters.insertion = { $regex: insertion, $options: 'i' };
 
     // Perform the filtered search
-    const results = await Dummies
+    const results = await DummiesCis
     .find(filters);
     res.json(results);
   } catch (e) {
@@ -39,7 +39,7 @@ router.get('/', async (req, res) => {
 router.get('/filter/:param', async (req, res) => {
   try {
     const filter_key = req.params.param.toLowerCase();
-    const filtered_data = await Dummies.find({
+    const filtered_data = await DummiesCis.find({
       name: { $regex: new RegExp(filter_key, "i") },
     });
     res.json(filtered_data);
@@ -50,7 +50,7 @@ router.get('/filter/:param', async (req, res) => {
 // Retrieve by id
 router.get('/:id', validate_route_param_id, async (req, res) => {
   try {
-    const get_one = await Dummies
+    const get_one = await DummiesCis
     .findById(req.params.id);
     res.json(get_one);
   }
@@ -61,7 +61,7 @@ router.get('/:id', validate_route_param_id, async (req, res) => {
 //Add new
 router.post('/', async (req, res) => {
   try {
-    const create = await Dummies
+    const create = await DummiesCis
     .create(req.body);
     console.log(req.body);
     res.json(create);
@@ -73,7 +73,7 @@ router.post('/', async (req, res) => {
 //Update by id
 router.put('/:id', validate_route_param_id, async (req,res)=>{
   try {
-    const update= await Dummies
+    const update= await DummiesCis
     .findByIdAndUpdate(req.params.id, req.body)
     res.json(update)
   }catch (e) {
@@ -83,7 +83,7 @@ router.put('/:id', validate_route_param_id, async (req,res)=>{
 //Delete by id
 router.delete('/:id', validate_route_param_id, async (req,res)=>{
   try{
-    const delete_one = await Dummies
+    const delete_one = await DummiesCis
     .findByIdAndDelete(req.params.id)
     logger.warn('Delete attempted!')
     console.warn('Delete attempted!')
