@@ -6,7 +6,8 @@ import error_handler from './middlewares/error_handler.mjs';
 import {logger} from './middlewares/winston_logger.mjs';
 import Murach from './models/murach.mjs';
 import Oreilly from './models/oreilly.mjs';
-import Dummies from './models/dummies.mjs';
+import DummiesCis from './models/dummies_cis.mjs';
+import DummiesTravel from './models/dummies_travel.mjs';
 import seed_routes from './routes/seed_routes.mjs';
 
 dotenv.config();
@@ -22,7 +23,9 @@ const murach = await import('./routes/murach_routes.mjs').then(
     module => module.default);
 const oreilly = await import('./routes/oreilly_routes.mjs').then(
     module => module.default);
-const dummies = await import('./routes/dummies_routes.mjs').then(
+const dummies_cis = await import('./routes/dummies_cis_routes.mjs').then(
+    module => module.default);
+const dummies_travel = await import('./routes/dummies_travel_routes.mjs').then(
     module => module.default);
 
 app.use(checkDbConn);
@@ -30,7 +33,8 @@ app.use(checkDbConn);
 //Route definitions
 app.use('/api/books/murach', murach);
 app.use('/api/books/oreilly', oreilly);
-app.use('/api/books/dummies', dummies);
+app.use('/api/books/dummies_cis', dummies_cis);
+app.use('/api/books/dummies_travel', dummies_travel);
 
 //Home Route
 app.get('/', (req, res) => {
@@ -48,7 +52,8 @@ app.get('/api/seed/books/all', async (req, res) => {
     await Promise.all([
       Murach.deleteMany({}),
       Oreilly.deleteMany({}),
-      Dummies.deleteMany({}),
+      DummiesCis.deleteMany({}),
+      DummiesTravel.deleteMany({}),
     ]);
     logger.warn('Delete on all data attempted at startup!');
     console.warn('Delete on all data attempted at startup!')
