@@ -1,7 +1,7 @@
 import mongoose from 'mongoose';
 
-// Define the schema for Dummies series
-const BookSchema = new mongoose.Schema({
+// Define the schema
+const DummiesTravelSchema = new mongoose.Schema({
   title: {
     type: String,
     required: true,
@@ -15,7 +15,7 @@ const BookSchema = new mongoose.Schema({
     required: true,
     unique: true,
   },
-  subject: {
+  destination: {
     type: String,
     required: true,
   },
@@ -29,15 +29,7 @@ const BookSchema = new mongoose.Schema({
   },
 });
 
-const DummiesSeriesSchema = new mongoose.Schema({
-  series: {
-    type: String,
-    required: true,
-    default: "For Dummies",
-  },
-  books: [BookSchema],
-});
 
 // Create the Mongoose model
-const Dummies = mongoose.model("Dummies", DummiesSeriesSchema);
-export default Dummies;
+const DummiesTravel = mongoose.model("Dummies_Travel", DummiesTravelSchema);
+export default DummiesTravel;

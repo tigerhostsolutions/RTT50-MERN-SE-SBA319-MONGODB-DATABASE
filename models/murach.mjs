@@ -1,7 +1,7 @@
 import mongoose from 'mongoose';
 
-// Define the schema for textbooks published by Murach Publishing
-const TextbookSchema = new mongoose.Schema({
+// Define the schema
+const MurachSchema = new mongoose.Schema({
   title: {
     type: String,
     required: true,
@@ -27,15 +27,6 @@ const TextbookSchema = new mongoose.Schema({
     type: Number,
     required: true,
   },
-});
-
-const MurachSchema = new mongoose.Schema({
-  publisher: {
-    type: String,
-    required: true,
-    default: "Murach Publishing",
-  },
-  textbooks: [TextbookSchema],
 });
 
 // Create the Mongoose model

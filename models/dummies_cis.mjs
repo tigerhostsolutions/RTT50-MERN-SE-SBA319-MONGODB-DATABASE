@@ -1,7 +1,7 @@
 import mongoose from 'mongoose';
 
 // Define the schema
-const OreillySchema = new mongoose.Schema({
+const DummiesCisSchema = new mongoose.Schema({
   title: {
     type: String,
     required: true,
@@ -30,5 +30,5 @@ const OreillySchema = new mongoose.Schema({
 });
 
 // Create the Mongoose model
-const Oreilly = mongoose.model("Oreilly", OreillySchema);
-export default Oreilly;
+const DummiesCis = mongoose.model("Dummies_CIS", DummiesCisSchema);
+export default DummiesCis
