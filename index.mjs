@@ -41,7 +41,8 @@ app.get('/', (req, res) => {
   res.send(`<h1>Welcome to My CS Book Library API</h1>` +
       `<a href="http://localhost:${port}/api/books/murach" target="_blank">Murach List</a>`+ '<br/>'+
       `<a href="http://localhost:${port}/api/books/oreilly" target="_blank">O'Reilly List</a>`+ '<br/>'+
-      `<a href="http://localhost:${port}/api/books/dummies" target="_blank">Dummies List</a>`);
+      `<a href="http://localhost:${port}/api/books/dummies_cis" target="_blank">Dummies CIS List</a>` + '<br/>' +
+      `<a href="http://localhost:${port}/api/books/dummies_travels" target="_blank">Dummies Travel List</a>`);
 });
 
 app.use('/api', seed_routes);
