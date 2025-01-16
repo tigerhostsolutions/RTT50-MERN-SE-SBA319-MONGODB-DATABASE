@@ -1,9 +1,9 @@
 {
   "name": "rtt-mern-se-sba319-express-server",
   "version": "1.0.0",
-  "main": "index.mjs",
+  "main": "server.mjs",
   "scripts": {
-    "start": "nodemon index.mjs"
+    "start": "nodemon server.mjs"
   },
   "keywords": [],
   "author": "",
