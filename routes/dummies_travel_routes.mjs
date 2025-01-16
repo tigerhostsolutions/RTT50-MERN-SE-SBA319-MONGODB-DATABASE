@@ -9,8 +9,8 @@ const router = express.Router();
 router.delete('/travel', async (req,res)=>{
   try{
     const delete_all = await DummiesTravel.deleteMany({})
-    logger.warn('Delete attempted!')
-    console.warn('Delete attempted!')
+    logger.warn('Delete attempted: All data has been deleted!')
+    console.warn('Delete attempted: All data has been deleted!')
     res.json(delete_all)
   }catch (e) {
     res.status(500).json({error: e.message})
@@ -85,8 +85,8 @@ router.delete('/travel/:id', validate_route_param_id, async (req,res)=>{
   try{
     const delete_one = await DummiesTravel
     .findByIdAndDelete(req.params.id)
-    logger.warn('Delete attempted!')
-    console.warn('Delete attempted!')
+    logger.warn('Delete attempted: Item has been deleted!')
+    console.warn('Delete attempted: Item has been deleted!')
     res.json(delete_one)
   }catch (e) {
     res.status(500).json({error: e.message})

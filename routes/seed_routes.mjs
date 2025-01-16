@@ -10,7 +10,7 @@ import {
 router.get('/seed/books/murach', async (req, res) => {
   try {
     await seedMurach();
-    res.status(200).send('Murach seeding requested!');
+    res.status(200).send('Murach seeding requested/delivered!');
   } catch (error) {
     res.status(500).send(`Error seeding Murach: ${error.message}`);
   }
@@ -19,25 +19,25 @@ router.get('/seed/books/murach', async (req, res) => {
 router.get('/seed/books/oreilly', async (req, res) => {
   try {
     await seedOReilly();
-    res.status(200).send('O\'Reilly seeding requested!');
+    res.status(200).send('O\'Reilly seeding requested/delivered!');
   } catch (error) {
     res.status(500).send(`Error seeding O\'Reilly: ${error.message}`);
   }
 });
 
-router.get('/seed/books/dummies_cis', async (req, res) => {
+router.get('/seed/books/dummies/cis', async (req, res) => {
   try {
     await seedDummies();
-    res.status(200).send('Dummies CIS seeding requested!');
+    res.status(200).send('Dummies CIS seeding requested/delivered!');
   } catch (error) {
     res.status(500).send(`Error seeding Dummies CIS: ${error.message}`);
   }
 });
 
-router.get('/seed/books/dummies_travel', async (req, res) => {
+router.get('/seed/books/dummies/travel', async (req, res) => {
   try {
     await seedDummiesTravel();
-    res.status(200).send('Dummies Travel seeding requested!');
+    res.status(200).send('Dummies Travel seeding requested/delivered!');
   } catch (error) {
     res.status(500).send(`Error seeding Dummies Travel: ${error.message}`);
   }
