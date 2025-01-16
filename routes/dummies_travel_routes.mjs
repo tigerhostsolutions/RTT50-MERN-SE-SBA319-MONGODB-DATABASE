@@ -6,7 +6,7 @@ import {validate_route_param_id} from '../middlewares/validate_request.mjs';
 const router = express.Router();
 
 // Delete All
-router.delete('/', async (req,res)=>{
+router.delete('/travel', async (req,res)=>{
   try{
     const delete_all = await DummiesTravel.deleteMany({})
     logger.warn('Delete attempted!')
@@ -17,7 +17,7 @@ router.delete('/', async (req,res)=>{
   }
 })
 // Retrieve All or Filter by Query Parameters
-router.get('/', async (req, res) => {
+router.get('/travel', async (req, res) => {
   try {
     const { name, action, insertion } = req.query;
     const filters = {};
@@ -36,7 +36,7 @@ router.get('/', async (req, res) => {
   }
 });
 // Retrieve by Name - route param implementation
-router.get('/filter/:param', async (req, res) => {
+router.get('/travel/filter/:param', async (req, res) => {
   try {
     const filter_key = req.params.param.toLowerCase();
     const filtered_data = await DummiesTravel.find({
@@ -48,7 +48,7 @@ router.get('/filter/:param', async (req, res) => {
   }
 });
 // Retrieve by id
-router.get('/:id', validate_route_param_id, async (req, res) => {
+router.get('/travel/:id', validate_route_param_id, async (req, res) => {
   try {
     const get_one = await DummiesTravel
     .findById(req.params.id);
@@ -59,7 +59,7 @@ router.get('/:id', validate_route_param_id, async (req, res) => {
   }
 });
 //Add new
-router.post('/', async (req, res) => {
+router.post('/travel', async (req, res) => {
   try {
     const create = await DummiesTravel
     .create(req.body);
@@ -71,7 +71,7 @@ router.post('/', async (req, res) => {
   }
 });
 //Update by id
-router.put('/:id', validate_route_param_id, async (req,res)=>{
+router.put('/travel/:id', validate_route_param_id, async (req,res)=>{
   try {
     const update= await DummiesTravel
     .findByIdAndUpdate(req.params.id, req.body)
@@ -81,7 +81,7 @@ router.put('/:id', validate_route_param_id, async (req,res)=>{
   }
 })
 //Delete by id
-router.delete('/:id', validate_route_param_id, async (req,res)=>{
+router.delete('/travel/:id', validate_route_param_id, async (req,res)=>{
   try{
     const delete_one = await DummiesTravel
     .findByIdAndDelete(req.params.id)

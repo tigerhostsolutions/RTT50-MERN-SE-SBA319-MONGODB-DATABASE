@@ -46,7 +46,7 @@ router.get('/seed/books/dummies_travel', async (req, res) => {
 router.get('/seed/books/all', async (req, res) => {
   try {
     const promises = [seedMurach(), seedOReilly(), seedDummies(), seedDummiesTravel()];
-    await Promise.all(promises); // Seed multiple models in parallel
+    await Promise.all(promises);
     res.status(200).send('Seeding for all models completed!');
   } catch (error) {
     res.status(500).send(`Error seeding all models: ${error.message}`);
