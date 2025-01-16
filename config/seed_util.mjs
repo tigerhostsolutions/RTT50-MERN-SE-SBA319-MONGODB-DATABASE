@@ -13,7 +13,7 @@ const __filename = fileURLToPath(import.meta.url);
 const __dirname = path.dirname(__filename);
 
 // Helper function to read JSON data
-async function readJsonFile(filePath) {
+const readJsonFile = async (filePath) => {
   try {
     const absolutePath = path.join(__dirname, filePath);
     const data = await fs.readFile(absolutePath, 'utf-8');
@@ -24,7 +24,7 @@ async function readJsonFile(filePath) {
   }
 }
 
-async function seedMurach() {
+const seedMurach = async () => {
   try {
     const exists = await Murach.findOne();//Check if data already exists
     if (exists) {
@@ -40,7 +40,7 @@ async function seedMurach() {
   }
 }
 
-async function seedOReilly() {
+ const seedOReilly = async () => {
   try {
     const exists = await OReilly.findOne();
     if (exists) {
@@ -55,7 +55,7 @@ async function seedOReilly() {
   }
 }
 
-async function seedDummies() {
+const seedDummies = async () => {
   try {
     const exists = await DummiesCis.findOne();
     if (exists) {
@@ -69,8 +69,7 @@ async function seedDummies() {
     console.error('Error seeding Dummies CIS:', error.message);
   }
 }
-
-async function seedDummiesTravel() {
+const seedDummiesTravel = async () => {
   try {
     const exists = await DummiesTravel.findOne();
     if (exists) {
@@ -85,4 +84,4 @@ async function seedDummiesTravel() {
   }
 }
 
-export { seedMurach, seedOReilly, seedDummies, seedDummiesTravel};
+export { seedMurach, seedOReilly, seedDummies, seedDummiesTravel };
