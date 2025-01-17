@@ -1,206 +1,86 @@
-[2025-01-09T18:46:49.043Z] INFO: Server is running on port 5000
-[2025-01-09T18:53:40.528Z] INFO: Server is running on port 5000
-[2025-01-09T18:55:43.246Z] INFO: Server is running on port 5000
-[2025-01-09T18:55:49.251Z] INFO: connected to mongodb
-[2025-01-09T18:56:27.047Z] INFO: Successfully connected to the database
-[2025-01-09T18:56:27.092Z] INFO: Server is running on port 5000
-[2025-01-09T18:56:32.157Z] INFO: connected to mongodb
-[2025-01-09T19:01:55.737Z] INFO: Successfully connected to the database
-[2025-01-09T19:01:55.779Z] INFO: Server is running on port 5000
-[2025-01-09T19:02:00.816Z] INFO: connected to mongodb
-[2025-01-09T19:06:30.500Z] INFO: Successfully connected to the database
-[2025-01-09T19:06:30.549Z] INFO: Server is running on port 5000
-[2025-01-09T19:06:35.689Z] INFO: connected to mongodb
-[2025-01-09T19:18:00.922Z] INFO: Successfully connected to the database
-[2025-01-09T19:18:00.971Z] INFO: Server is running on port 5000
-[2025-01-09T19:18:06.152Z] INFO: connected to mongodb
-[2025-01-10T01:18:20.391Z] INFO: Server is running on port 5000
-[2025-01-10T01:24:58.816Z] INFO: Server is running on port 5000
-[2025-01-10T01:34:42.732Z] INFO: Server is running on port 5000
-[2025-01-10T01:35:23.617Z] INFO: Server is running on port 5000
-[2025-01-10T01:55:50.893Z] INFO: Server is running on port 3000
-[2025-01-10T02:17:36.606Z] INFO: Server is running on port 3000
-[2025-01-10T02:26:13.497Z] INFO: Server is running on port 3000
-[2025-01-10T03:51:23.279Z] INFO: Server is running on port 3000
-[2025-01-10T04:03:47.507Z] INFO: Server is running on port 3000
-[2025-01-10T04:16:59.788Z] INFO: Server is running on port 3000
-[2025-01-10T04:23:20.037Z] INFO: Server is running on port 3000
-[2025-01-10T06:52:09.267Z] INFO: Successfully connected to the database
-[2025-01-10T06:56:02.979Z] INFO: Successfully connected to the database
-[2025-01-10T06:57:16.550Z] INFO: Successfully connected to the database
-[2025-01-10T06:58:13.951Z] INFO: Successfully connected to the database
-[2025-01-10T06:58:14.007Z] INFO: Server is running on port 3000
-[2025-01-10T06:58:19.014Z] INFO: connected to mongodb
-[2025-01-10T07:06:23.051Z] INFO: Successfully connected to the database
-[2025-01-10T07:06:23.086Z] INFO: Server is running on port 3000
-[2025-01-10T07:06:32.278Z] INFO: connected to mongodb
-[2025-01-10T07:27:28.358Z] INFO: Successfully connected to the database
-[2025-01-10T07:33:56.086Z] INFO: Successfully connected to the database
-[2025-01-10T07:36:31.796Z] INFO: Successfully connected to the database
-[2025-01-10T07:41:02.068Z] INFO: Successfully connected to the database
-[2025-01-10T07:45:00.848Z] INFO: Successfully connected to the database
-[2025-01-10T07:45:00.900Z] INFO: Server is running on port 3000
-[2025-01-10T07:45:07.096Z] INFO: connected to mongodb
-[2025-01-10T08:09:11.807Z] INFO: Successfully connected to the database
-[2025-01-10T08:09:11.843Z] INFO: Server is running on port 3000
-[2025-01-10T08:09:18.312Z] INFO: connected to mongodb
-[2025-01-10T08:12:25.257Z] INFO: Successfully connected to the database
-[2025-01-10T08:12:25.296Z] INFO: Server is running on port 3000
-[2025-01-10T08:12:31.395Z] INFO: connected to mongodb
-[2025-01-10T08:14:35.961Z] INFO: Successfully connected to the database
-[2025-01-10T08:14:36.003Z] INFO: Server is running on port 3000
-[2025-01-10T08:14:41.983Z] INFO: connected to mongodb
-[2025-01-10T08:16:50.196Z] INFO: Successfully connected to the database
-[2025-01-10T08:16:50.240Z] INFO: Server is running on port 3000
-[2025-01-10T08:16:55.267Z] INFO: connected to mongodb
-[2025-01-10T08:19:47.202Z] WARN: Deleted all system data
-[2025-01-10T08:19:47.203Z] ERROR: Something went wrong loading seed data: muscular_system_demo is not defined
-[2025-01-10T08:26:38.050Z] INFO: Successfully connected to the database
-[2025-01-10T08:26:38.086Z] INFO: Server is running on port 3000
-[2025-01-10T08:26:43.042Z] INFO: connected to mongodb
-[2025-01-10T08:44:36.949Z] INFO: Successfully connected to the database
-[2025-01-10T08:44:36.977Z] INFO: Server is running on port 3000
-[2025-01-10T08:44:41.883Z] INFO: connected to mongodb
-[2025-01-10T08:50:16.957Z] WARN: Deleted all system data
-[2025-01-10T08:50:17.161Z] ERROR: Something went wrong loading seed data: Skeletal_System validation failed: purpose: Path `purpose` is required.
-[2025-01-10T08:50:25.446Z] INFO: Successfully connected to the database
-[2025-01-10T08:50:25.530Z] INFO: Server is running on port 3000
-[2025-01-10T08:50:31.478Z] INFO: connected to mongodb
-[2025-01-10T08:53:39.433Z] INFO: Successfully connected to the database
-[2025-01-10T08:53:39.485Z] INFO: Server is running on port 3000
-[2025-01-10T08:53:44.569Z] INFO: connected to mongodb
-[2025-01-10T08:58:15.232Z] WARN: Deleted all system data
-[2025-01-10T08:58:15.908Z] INFO: Imported all data successfully
-[2025-01-10T09:28:50.866Z] WARN: Deleted all system data
-[2025-01-10T09:28:51.350Z] INFO: Imported all data successfully
-[2025-01-10T09:29:01.478Z] WARN: Deleted all system data
-[2025-01-10T09:29:01.967Z] INFO: Imported all data successfully
-[2025-01-10T09:30:55.661Z] INFO: Successfully connected to the database
-[2025-01-10T09:30:55.714Z] INFO: Server is running on port 3000
-[2025-01-10T09:31:00.832Z] INFO: connected to mongodb
-[2025-01-10T09:36:52.358Z] WARN: Deleted all system data
-[2025-01-10T09:36:53.306Z] INFO: Imported all data successfully
-[2025-01-10T09:37:27.588Z] WARN: Deleted all system data
-[2025-01-10T09:37:28.194Z] INFO: Imported all data successfully
-[2025-01-10T09:37:38.298Z] WARN: Deleted all system data
-[2025-01-10T09:37:38.892Z] INFO: Imported all data successfully
-[2025-01-10T09:37:47.030Z] WARN: Deleted all system data
-[2025-01-10T09:37:47.642Z] INFO: Imported all data successfully
-[2025-01-10T11:11:54.037Z] ERROR: Unexpected non-whitespace character after JSON at position 84 (line 4 column 6)
-[2025-01-10T11:28:28.697Z] INFO: Successfully connected to the database
-[2025-01-10T11:28:28.723Z] INFO: Server is running on port 3000
-[2025-01-10T11:28:33.730Z] INFO: connected to mongodb
-[2025-01-10T11:35:14.267Z] INFO: Successfully connected to the database
-[2025-01-10T11:35:14.365Z] INFO: Server is running on port 3000
-[2025-01-10T11:35:20.184Z] INFO: connected to mongodb
-[2025-01-10T11:53:35.556Z] INFO: Server is running on port 3000
-[2025-01-10T11:53:40.424Z] INFO: Successfully connected to the database
-[2025-01-10T11:57:31.534Z] ERROR: Connection Error: Invalid scheme, expected connection string to start with "mongodb://" or "mongodb+srv://"
-[2025-01-10T11:57:31.543Z] INFO: Successfully connected to the database
-[2025-01-10T11:57:31.565Z] INFO: Server is running on port 3000
-[2025-01-10T11:58:05.123Z] INFO: Server is running on port 3000
-[2025-01-10T11:58:10.137Z] INFO: Successfully connected to the database
-[2025-01-10T12:18:48.275Z] INFO: Server is running on port 3000
-[2025-01-10T12:18:53.195Z] INFO: Successfully connected to the database
-[2025-01-10T12:23:10.020Z] INFO: Server is running on port 3000
-[2025-01-10T12:23:15.054Z] INFO: Successfully connected to the database
-[2025-01-10T13:07:44.221Z] INFO: Server is running on port 3000
-[2025-01-10T13:07:49.333Z] INFO: Successfully connected to the database
-[2025-01-10T13:10:33.031Z] WARN: Deleted all system data
-[2025-01-10T13:10:33.887Z] INFO: Imported all data successfully
-[2025-01-10T13:24:01.527Z] INFO: Server is running on port 3000
-[2025-01-10T13:24:06.492Z] INFO: Successfully connected to the database
-[2025-01-10T13:35:30.579Z] INFO: Server is running on port 3000
-[2025-01-10T13:35:35.581Z] INFO: Successfully connected to the database
-[2025-01-10T13:38:57.173Z] INFO: Server is running on port 3000
-[2025-01-10T13:39:02.192Z] INFO: Successfully connected to the database
-[2025-01-10T13:39:14.874Z] INFO: Server is running on port 3000
-[2025-01-10T13:39:19.855Z] INFO: Successfully connected to the database
-[2025-01-10T14:18:35.712Z] INFO: Server is running on port 3000
-[2025-01-10T14:18:40.802Z] INFO: Successfully connected to the database
-[2025-01-10T14:20:57.502Z] INFO: Server is running on port 3000
-[2025-01-10T14:21:02.908Z] INFO: Successfully connected to the database
-[2025-01-10T14:22:33.011Z] INFO: Server is running on port 3000
-[2025-01-10T14:22:38.161Z] INFO: Successfully connected to the database
-[2025-01-10T14:27:47.816Z] INFO: Server is running on port 3000
-[2025-01-10T14:27:53.046Z] INFO: Successfully connected to the database
-[2025-01-10T14:30:14.226Z] INFO: Server is running on port 3000
-[2025-01-10T14:30:19.431Z] INFO: Successfully connected to the database
-[2025-01-10T14:36:09.380Z] INFO: Server is running on port 3000
-[2025-01-10T14:36:15.194Z] INFO: Successfully connected to the database
-[2025-01-10T14:37:38.971Z] INFO: Server is running on port 3000
-[2025-01-10T14:37:44.669Z] INFO: Successfully connected to the database
-[2025-01-10T14:40:04.061Z] INFO: Server is running on port 3000
-[2025-01-10T14:40:09.293Z] INFO: Successfully connected to the database
-[2025-01-10T14:45:19.424Z] INFO: Server is running on port 3000
-[2025-01-10T14:45:24.644Z] INFO: Successfully connected to the database
-[2025-01-10T14:48:39.837Z] INFO: Server is running on port 3000
-[2025-01-10T14:48:44.961Z] INFO: Successfully connected to the database
-[2025-01-10T14:55:17.578Z] INFO: Server is running on port 3000
-[2025-01-10T14:55:23.853Z] INFO: Successfully connected to the database
-[2025-01-10T17:23:26.629Z] INFO: Server is running on port 3000
-[2025-01-10T17:23:31.627Z] INFO: Successfully connected to the database
-[2025-01-10T17:36:34.356Z] INFO: Server is running on port 3000
-[2025-01-10T17:36:40.038Z] INFO: Successfully connected to the database
-[2025-01-10T17:36:45.495Z] INFO: Server is running on port 3000
-[2025-01-10T17:36:50.410Z] INFO: Successfully connected to the database
-[2025-01-10T17:42:01.852Z] INFO: Server is running on port 3000
-[2025-01-10T17:42:06.736Z] INFO: Successfully connected to the database
-[2025-01-10T17:42:12.804Z] INFO: Server is running on port 3000
-[2025-01-10T17:42:17.737Z] INFO: Successfully connected to the database
-[2025-01-10T22:56:40.927Z] INFO: Server is running on port 3000
-[2025-01-10T22:56:46.983Z] INFO: Successfully connected to the database
-[2025-01-10T22:59:27.393Z] INFO: Server is running on port 3000
-[2025-01-10T22:59:33.543Z] INFO: Successfully connected to the database
-[2025-01-10T23:00:34.233Z] INFO: Server is running on port 3000
-[2025-01-10T23:00:40.772Z] INFO: Successfully connected to the database
-[2025-01-10T23:09:59.864Z] INFO: Server is running on port 3000
-[2025-01-10T23:10:05.050Z] INFO: Successfully connected to the database
-[2025-01-10T23:33:21.321Z] INFO: Server is running on port 3000
-[2025-01-10T23:33:26.830Z] INFO: Successfully connected to the database
-[2025-01-10T23:41:02.712Z] INFO: Server is running on port 3000
-[2025-01-10T23:41:08.392Z] INFO: Successfully connected to the database
-[2025-01-10T23:58:00.935Z] INFO: Server is running on port 3000
-[2025-01-10T23:58:06.117Z] INFO: Successfully connected to the database
-[2025-01-11T00:03:34.177Z] INFO: MongoDb Connection cluster0-shard-00-00.g8ogg.mongodb.net Successful.
-[2025-01-11T00:31:04.239Z] INFO: Server is running on port 3000
-[2025-01-11T00:31:10.306Z] INFO: Successfully connected to the database
-[2025-01-11T00:31:42.816Z] INFO: Server is running on port 3000
-[2025-01-11T00:31:49.022Z] INFO: Successfully connected to the database
-[2025-01-11T00:32:28.378Z] INFO: Server is running on port 3000
-[2025-01-11T00:32:34.416Z] INFO: Successfully connected to the database
-[2025-01-11T00:43:26.610Z] INFO: Server is running on port 3000
-[2025-01-11T00:43:32.655Z] INFO: Successfully connected to the database
-[2025-01-11T00:51:04.506Z] INFO: Server is running on port 3000
-[2025-01-11T00:51:09.586Z] INFO: Successfully connected to the database
-[2025-01-11T00:51:30.302Z] INFO: Server is running on port 3000
-[2025-01-11T00:51:35.232Z] INFO: Successfully connected to the database
-[2025-01-11T00:52:47.828Z] INFO: Server is running on port 3000
-[2025-01-11T00:52:52.840Z] INFO: Successfully connected to the database
-[2025-01-11T01:01:19.213Z] INFO: Server is running on port 3000
-[2025-01-11T01:01:24.881Z] INFO: Successfully connected to the database
-[2025-01-11T01:29:05.568Z] INFO: Server is running on port 3000
-[2025-01-11T01:29:11.051Z] INFO: Successfully connected to the database
-[2025-01-11T01:33:10.681Z] INFO: Server is running on port 3000
-[2025-01-11T01:33:16.669Z] INFO: Successfully connected to the database
-[2025-01-11T01:38:24.430Z] INFO: Server is running on port 3000
-[2025-01-11T01:38:29.825Z] INFO: Successfully connected to the database
-[2025-01-11T01:40:14.936Z] INFO: Server is running on port 3000
-[2025-01-11T01:40:20.139Z] INFO: Successfully connected to the database
-[2025-01-11T01:43:32.028Z] INFO: Server is running on port 3000
-[2025-01-11T01:43:37.480Z] INFO: Successfully connected to the database
-[2025-01-11T02:27:23.214Z] INFO: MongoDb Connection cluster0-shard-00-02.g8ogg.mongodb.net Successful.
-[2025-01-11T02:49:12.609Z] INFO: Server is running on port 3000
-[2025-01-11T02:49:18.148Z] INFO: Successfully connected to the database
-[2025-01-11T02:53:53.870Z] INFO: Server is running on port 3000
-[2025-01-11T02:53:58.970Z] INFO: Successfully connected to the database
-[2025-01-11T03:10:56.089Z] INFO: Server is running on port 3000
-[2025-01-11T03:11:01.370Z] INFO: Successfully connected to the database
-[2025-01-11T03:13:29.168Z] INFO: Server is running on port 3000
-[2025-01-11T03:13:34.625Z] INFO: Successfully connected to the database
-[2025-01-11T03:17:30.959Z] INFO: Server is running on port 3000
-[2025-01-11T03:17:36.196Z] INFO: Successfully connected to the database
-[2025-01-11T13:34:31.687Z] INFO: Server is running on http://localhost:5000
-[2025-01-11T13:34:36.681Z] INFO: MongoDb Connection cluster0-shard-00-00.g8ogg.mongodb.net Successful.
-[2025-01-11T14:07:28.458Z] INFO: Server is running on http://localhost:5000
-[2025-01-11T14:07:34.134Z] INFO: MongoDb Connection cluster0-shard-00-00.g8ogg.mongodb.net Successful.
+[2025-01-16T10:40:14.133Z] INFO: Server is running on http://localhost:5000
+[2025-01-16T10:40:19.048Z] INFO: MongoDb Connection cluster0-shard-00-01.g8ogg.mongodb.net Successful.
+[2025-01-16T10:44:43.413Z] INFO: Server is running on http://localhost:5000
+[2025-01-16T10:44:47.981Z] INFO: MongoDb Connection cluster0-shard-00-02.g8ogg.mongodb.net Successful.
+[2025-01-16T10:45:58.578Z] WARN: Delete attempted!
+[2025-01-16T10:57:57.169Z] INFO: Server is running on http://localhost:5000
+[2025-01-16T10:58:01.198Z] INFO: MongoDb Connection cluster0-shard-00-00.g8ogg.mongodb.net Successful.
+[2025-01-16T11:00:17.411Z] INFO: Server is running on http://localhost:5000
+[2025-01-16T11:00:23.091Z] INFO: MongoDb Connection cluster0-shard-00-00.g8ogg.mongodb.net Successful.
+[2025-01-16T11:00:26.225Z] WARN: Delete attempted!
+[2025-01-16T11:04:02.152Z] INFO: Server is running on http://localhost:5000
+[2025-01-16T11:04:06.711Z] INFO: MongoDb Connection cluster0-shard-00-02.g8ogg.mongodb.net Successful.
+[2025-01-16T11:04:52.742Z] INFO: Server is running on http://localhost:5000
+[2025-01-16T11:04:58.351Z] INFO: MongoDb Connection cluster0-shard-00-02.g8ogg.mongodb.net Successful.
+[2025-01-16T11:06:05.739Z] INFO: Server is running on http://localhost:5000
+[2025-01-16T11:06:11.546Z] INFO: MongoDb Connection cluster0-shard-00-01.g8ogg.mongodb.net Successful.
+[2025-01-16T11:06:56.946Z] WARN: Delete attempted!
+[2025-01-16T11:09:33.294Z] INFO: Server is running on http://localhost:5000
+[2025-01-16T11:09:38.944Z] INFO: MongoDb Connection cluster0-shard-00-01.g8ogg.mongodb.net Successful.
+[2025-01-16T11:16:00.310Z] WARN: Delete attempted!
+[2025-01-16T11:19:31.764Z] INFO: Server is running on http://localhost:5000
+[2025-01-16T11:19:37.442Z] INFO: MongoDb Connection cluster0-shard-00-00.g8ogg.mongodb.net Successful.
+[2025-01-16T11:23:14.100Z] INFO: Server is running on http://localhost:5000
+[2025-01-16T11:23:19.726Z] INFO: MongoDb Connection cluster0-shard-00-00.g8ogg.mongodb.net Successful.
+[2025-01-16T11:44:48.782Z] INFO: Server is running on http://localhost:5000
+[2025-01-16T11:44:54.480Z] INFO: MongoDb Connection cluster0-shard-00-00.g8ogg.mongodb.net Successful.
+[2025-01-16T11:54:23.306Z] INFO: Server is running on http://localhost:5000
+[2025-01-16T11:54:29.041Z] INFO: MongoDb Connection cluster0-shard-00-01.g8ogg.mongodb.net Successful.
+[2025-01-16T11:55:22.078Z] INFO: Server is running on http://localhost:5000
+[2025-01-16T11:55:27.812Z] INFO: MongoDb Connection cluster0-shard-00-00.g8ogg.mongodb.net Successful.
+[2025-01-16T11:56:18.798Z] WARN: Delete attempted: All data has been deleted!
+[2025-01-16T12:05:12.400Z] INFO: Server is running on http://localhost:5000
+[2025-01-16T12:05:18.006Z] INFO: MongoDb Connection cluster0-shard-00-02.g8ogg.mongodb.net Successful.
+[2025-01-16T12:05:46.987Z] INFO: Server is running on http://localhost:5000
+[2025-01-16T12:05:52.642Z] INFO: MongoDb Connection cluster0-shard-00-01.g8ogg.mongodb.net Successful.
+[2025-01-16T12:25:47.324Z] INFO: Server is running on http://localhost:5000
+[2025-01-16T12:25:52.949Z] INFO: MongoDb Connection cluster0-shard-00-02.g8ogg.mongodb.net Successful.
+[2025-01-16T12:37:12.027Z] INFO: Server is running on http://localhost:5000
+[2025-01-16T12:37:17.747Z] INFO: MongoDb Connection cluster0-shard-00-00.g8ogg.mongodb.net Successful.
+[2025-01-16T12:52:31.403Z] INFO: Server is running on http://localhost:5000
+[2025-01-16T12:52:37.081Z] INFO: MongoDb Connection cluster0-shard-00-01.g8ogg.mongodb.net Successful.
+[2025-01-16T13:13:21.193Z] INFO: Server is running on http://localhost:5000
+[2025-01-16T13:13:25.837Z] INFO: MongoDb Connection cluster0-shard-00-01.g8ogg.mongodb.net Successful.
+[2025-01-16T13:20:45.440Z] INFO: Server is running on http://localhost:5000
+[2025-01-16T13:20:50.091Z] INFO: MongoDb Connection cluster0-shard-00-02.g8ogg.mongodb.net Successful.
+[2025-01-16T13:25:58.180Z] INFO: Server is running on http://localhost:5000
+[2025-01-16T13:26:03.895Z] INFO: MongoDb Connection cluster0-shard-00-00.g8ogg.mongodb.net Successful.
+[2025-01-16T13:31:58.448Z] INFO: Server is running on http://localhost:5000
+[2025-01-16T13:32:03.034Z] INFO: MongoDb Connection cluster0-shard-00-01.g8ogg.mongodb.net Successful.
+[2025-01-16T13:32:30.754Z] INFO: Server is running on http://localhost:5000
+[2025-01-16T13:32:35.641Z] INFO: MongoDb Connection cluster0-shard-00-00.g8ogg.mongodb.net Successful.
+[2025-01-16T13:34:42.492Z] INFO: Server is running on http://localhost:5000
+[2025-01-16T13:34:47.184Z] INFO: MongoDb Connection cluster0-shard-00-00.g8ogg.mongodb.net Successful.
+[2025-01-16T13:47:16.610Z] INFO: Server is running on http://localhost:5000
+[2025-01-16T13:47:21.301Z] INFO: MongoDb Connection cluster0-shard-00-00.g8ogg.mongodb.net Successful.
+[2025-01-16T13:48:24.695Z] INFO: Server is running on http://localhost:5000
+[2025-01-16T13:48:29.296Z] INFO: MongoDb Connection cluster0-shard-00-02.g8ogg.mongodb.net Successful.
+[2025-01-16T13:58:50.647Z] INFO: Server is running on http://localhost:5000
+[2025-01-16T13:58:56.595Z] INFO: MongoDb Connection cluster0-shard-00-00.g8ogg.mongodb.net Successful.
+[2025-01-16T14:07:05.566Z] INFO: Server is running on http://localhost:5000
+[2025-01-16T14:07:10.329Z] INFO: MongoDb Connection cluster0-shard-00-00.g8ogg.mongodb.net Successful.
+[2025-01-16T14:08:03.959Z] INFO: Server is running on http://localhost:5000
+[2025-01-16T14:08:08.760Z] INFO: MongoDb Connection cluster0-shard-00-00.g8ogg.mongodb.net Successful.
+[2025-01-16T14:08:28.076Z] INFO: Server is running on http://localhost:5000
+[2025-01-16T14:08:32.654Z] INFO: MongoDb Connection cluster0-shard-00-01.g8ogg.mongodb.net Successful.
+[2025-01-16T15:28:21.940Z] INFO: Server is running on http://localhost:5000
+[2025-01-16T15:28:26.170Z] INFO: MongoDb Connection cluster0-shard-00-00.g8ogg.mongodb.net Successful.
+[2025-01-16T15:48:02.198Z] INFO: Server is running on http://localhost:5000
+[2025-01-16T15:48:06.687Z] INFO: MongoDb Connection cluster0-shard-00-00.g8ogg.mongodb.net Successful.
+[2025-01-16T21:56:02.414Z] INFO: Server is running on http://localhost:5000
+[2025-01-16T21:56:08.328Z] INFO: MongoDb Connection cluster0-shard-00-02.g8ogg.mongodb.net Successful.
+[2025-01-16T21:59:00.279Z] INFO: Server is running on http://localhost:5000
+[2025-01-16T21:59:05.036Z] INFO: MongoDb Connection cluster0-shard-00-01.g8ogg.mongodb.net Successful.
+[2025-01-16T23:00:59.780Z] INFO: Server is running on http://localhost:5000
+[2025-01-16T23:01:04.590Z] INFO: MongoDb Connection cluster0-shard-00-02.g8ogg.mongodb.net Successful.
+[2025-01-16T23:18:07.371Z] INFO: Server is running on http://localhost:5000
+[2025-01-16T23:18:13.129Z] INFO: MongoDb Connection cluster0-shard-00-01.g8ogg.mongodb.net Successful.
+[2025-01-16T23:18:26.105Z] WARN: Delete attempted: All data has been deleted!
+[2025-01-16T23:34:55.102Z] INFO: Server is running on http://localhost:5000
+[2025-01-16T23:34:59.903Z] INFO: MongoDb Connection cluster0-shard-00-00.g8ogg.mongodb.net Successful.
+[2025-01-17T00:33:08.180Z] INFO: Server is running on http://localhost:5000
+[2025-01-17T00:33:13.144Z] INFO: MongoDb Connection cluster0-shard-00-02.g8ogg.mongodb.net Successful.
+[2025-01-17T00:49:11.990Z] INFO: Server is running on http://localhost:5000
+[2025-01-17T00:49:17.053Z] INFO: MongoDb Connection cluster0-shard-00-02.g8ogg.mongodb.net Successful.
+[2025-01-17T01:03:20.432Z] INFO: Server is running on http://localhost:5000
+[2025-01-17T01:03:25.349Z] INFO: MongoDb Connection cluster0-shard-00-00.g8ogg.mongodb.net Successful.
