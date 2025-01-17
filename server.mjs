@@ -8,6 +8,7 @@ import Oreilly from './models/oreilly.mjs';
 import DummiesCis from './models/dummies_cis.mjs';
 import DummiesTravel from './models/dummies_travel.mjs';
 import seed_routes from './routes/seed_routes.mjs';
+import cors from 'cors';
 
 dotenv.config();
 const app = express();
@@ -15,6 +16,9 @@ const port = process.env.PORT5000;
 conn()
 
 // Middleware
+/*Testing local frontend development*/
+app.use(cors({ origin: 'http://localhost:63342' }));
+// app.use(cors());
 app.use(express.json());
 
 // Resolve the dynamic imports before using them
