@@ -18,6 +18,20 @@ const OreillySchema = new mongoose.Schema({
   subject: {
     type: String,
     required: true,
+    /*Used to test validation. Too restrictive to implement.*/
+    // enum: {
+    //   values: [
+    //     "Programming",
+    //     "Data Science",
+    //     "Web Development",
+    //     "Machine Learning",
+    //     "Cloud Computing",
+    //     "Database",
+    //     "Security",
+    //   ],
+    //   message: "Subject must be one of the specified categories",
+    // },
+    trim: true,
   },
   edition: {
     type: String,
@@ -26,6 +40,7 @@ const OreillySchema = new mongoose.Schema({
   year: {
     type: Number,
     required: true,
+    min: [1984, "Year must be no earlier than 1984"],
   },
 });
 
